@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
 import { Navbar } from './components/Navbar';
@@ -28,7 +28,7 @@ export function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen flex flex-col bg-gray-50 text-neutral-900 selection:bg-emerald-500 selection:text-white">
         <Toaster
           position="top-center"
@@ -67,7 +67,7 @@ export function App() {
         <AuthModal />
         <AIChatDrawer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

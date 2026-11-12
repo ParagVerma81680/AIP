@@ -1,0 +1,2908 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Fresh Ratnagiri Alphonso Mangoes",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Handpicked naturally ripened Alphonso mangoes with rich aroma and sweet pulp.",
+      "image_url": "https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg (4-5 pcs)",
+      "price": 349.0,
+      "original_price": 399.0,
+      "discount_pct": 12,
+      "stock": 45,
+      "is_available": true,
+      "shelf_id": 5,
+      "shelf_x": 95.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 2,
+      "name": "Mahabaleshwar Fresh Strawberries",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Sweet, juicy ruby-red strawberries packed in protective punnet.",
+      "image_url": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "200 g pack",
+      "price": 119.0,
+      "original_price": 140.0,
+      "discount_pct": 15,
+      "stock": 30,
+      "is_available": true,
+      "shelf_id": 5,
+      "shelf_x": 95.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 3,
+      "name": "Washington Royal Gala Red Apples",
+      "brand": "Fresh Harvest",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Crisp and delightfully sweet imported Royal Gala apples.",
+      "image_url": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "4 pcs (~650g)",
+      "price": 165.0,
+      "original_price": 195.0,
+      "discount_pct": 15,
+      "stock": 50,
+      "is_available": true,
+      "shelf_id": 6,
+      "shelf_x": 95.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 4,
+      "name": "Nagpur Fresh Mandarin Oranges",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Easy to peel, juicy citrus oranges loaded with natural Vitamin C.",
+      "image_url": "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg (~6 pcs)",
+      "price": 89.0,
+      "original_price": 110.0,
+      "discount_pct": 19,
+      "stock": 40,
+      "is_available": true,
+      "shelf_id": 6,
+      "shelf_x": 95.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 5,
+      "name": "Zespri Green Kiwi",
+      "brand": "Zespri",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Tangy and refreshing nutrient-dense kiwifruit.",
+      "image_url": "https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "3 pcs pack",
+      "price": 99.0,
+      "original_price": 120.0,
+      "discount_pct": 17,
+      "stock": 35,
+      "is_available": true,
+      "shelf_id": 6,
+      "shelf_x": 95.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 6,
+      "name": "Organic Robusta Bananas",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Naturally grown sweet Robusta bananas, rich in potassium and energy.",
+      "image_url": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg (~6-8 pcs)",
+      "price": 48.0,
+      "original_price": 60.0,
+      "discount_pct": 20,
+      "stock": 80,
+      "is_available": true,
+      "shelf_id": 7,
+      "shelf_x": 95.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 7,
+      "name": "Sweet Kiran Striped Watermelon",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Crisp and thirst-quenching sweet whole watermelon.",
+      "image_url": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 pc (~2.5 kg)",
+      "price": 85.0,
+      "original_price": 105.0,
+      "discount_pct": 19,
+      "stock": 25,
+      "is_available": true,
+      "shelf_id": 7,
+      "shelf_x": 95.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 8,
+      "name": "Fresh Ripe Taiwan Papaya",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Sweet orange flesh papaya, high in digestive enzymes and vitamins.",
+      "image_url": "https://images.unsplash.com/photo-1617112848923-cc2234396a8d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 pc (~1 kg)",
+      "price": 55.0,
+      "original_price": 70.0,
+      "discount_pct": 21,
+      "stock": 30,
+      "is_available": true,
+      "shelf_id": 7,
+      "shelf_x": 95.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 9,
+      "name": "Farm Fresh Red Nashik Onions",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Pungent and flavorful grade-A red onions for everyday cooking.",
+      "image_url": "https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg bag",
+      "price": 35.0,
+      "original_price": 45.0,
+      "discount_pct": 22,
+      "stock": 150,
+      "is_available": true,
+      "shelf_id": 8,
+      "shelf_x": 195.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 10,
+      "name": "Fresh New Crop Jyoti Potatoes",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Versatile all-purpose potatoes perfect for frying, curries and mash.",
+      "image_url": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg bag",
+      "price": 28.0,
+      "original_price": 35.0,
+      "discount_pct": 20,
+      "stock": 140,
+      "is_available": true,
+      "shelf_id": 8,
+      "shelf_x": 195.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 11,
+      "name": "Fresh Crunchy Red Carrots",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Naturally sweet farm-harvested red carrots, ideal for salads and halwa.",
+      "image_url": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "500 g pack",
+      "price": 32.0,
+      "original_price": 40.0,
+      "discount_pct": 20,
+      "stock": 60,
+      "is_available": true,
+      "shelf_id": 8,
+      "shelf_x": 195.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 12,
+      "name": "Fresh Hybrid Salad Tomatoes",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Firm and juicy vine-ripened tomatoes for daily cooking and salads.",
+      "image_url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg pack",
+      "price": 29.0,
+      "original_price": 38.0,
+      "discount_pct": 23,
+      "stock": 120,
+      "is_available": true,
+      "shelf_id": 9,
+      "shelf_x": 195.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 13,
+      "name": "Crisp Green Bell Capsicum",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Crunchy thick-walled green capsicum, great for stir fries and curries.",
+      "image_url": "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "500 g pack",
+      "price": 42.0,
+      "original_price": 50.0,
+      "discount_pct": 16,
+      "stock": 50,
+      "is_available": true,
+      "shelf_id": 9,
+      "shelf_x": 195.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 14,
+      "name": "English Seedless Cucumber",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Hydrating, crisp green cucumber with tender skin and mild flavor.",
+      "image_url": "https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "500 g pack",
+      "price": 34.0,
+      "original_price": 42.0,
+      "discount_pct": 19,
+      "stock": 45,
+      "is_available": true,
+      "shelf_id": 9,
+      "shelf_x": 195.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 15,
+      "name": "Fresh Fragrant Coriander (Dhaniya)",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Crisp green aromatic coriander leaves for authentic Indian garnishing.",
+      "image_url": "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "100 g bunch",
+      "price": 15.0,
+      "original_price": 20.0,
+      "discount_pct": 25,
+      "stock": 70,
+      "is_available": true,
+      "shelf_id": 10,
+      "shelf_x": 195.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 16,
+      "name": "Spicy Indian Green Chillies",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Fresh vibrant green chillies with a sharp, fiery kick.",
+      "image_url": "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "100 g pack",
+      "price": 12.0,
+      "original_price": 15.0,
+      "discount_pct": 20,
+      "stock": 90,
+      "is_available": true,
+      "shelf_id": 10,
+      "shelf_x": 195.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 17,
+      "name": "Tender Baby Spinach (Palak)",
+      "brand": "Farm Fresh",
+      "category_id": 1,
+      "category": {
+        "id": 1,
+        "name": "Fruits & Vegetables",
+        "slug": "fruits-vegetables",
+        "icon": "\ud83e\udd66",
+        "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 1
+      },
+      "description": "Washed and sorted tender spinach leaves rich in iron and folates.",
+      "image_url": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "250 g bunch",
+      "price": 24.0,
+      "original_price": 30.0,
+      "discount_pct": 20,
+      "stock": 40,
+      "is_available": true,
+      "shelf_id": 10,
+      "shelf_x": 195.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 18,
+      "name": "Amul Taaza Homogenised Toned Milk",
+      "brand": "Amul",
+      "category_id": 2,
+      "category": {
+        "id": 2,
+        "name": "Dairy, Bread & Eggs",
+        "slug": "dairy-bread-eggs",
+        "icon": "\ud83e\udd5b",
+        "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 2
+      },
+      "description": "Pasteurized and homogenised fresh toned milk, 3.0% fat, 8.5% SNF.",
+      "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 L Pouch",
+      "price": 56.0,
+      "original_price": 56.0,
+      "discount_pct": 0,
+      "stock": 100,
+      "is_available": true,
+      "shelf_id": 14,
+      "shelf_x": 462.5,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 19,
+      "name": "Amul Malai Fresh Cottage Cheese (Paneer)",
+      "brand": "Amul",
+      "category_id": 2,
+      "category": {
+        "id": 2,
+        "name": "Dairy, Bread & Eggs",
+        "slug": "dairy-bread-eggs",
+        "icon": "\ud83e\udd5b",
+        "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 2
+      },
+      "description": "Soft and creamy fresh cottage cheese made from pasteurized milk.",
+      "image_url": "https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "200 g pack",
+      "price": 92.0,
+      "original_price": 95.0,
+      "discount_pct": 3,
+      "stock": 60,
+      "is_available": true,
+      "shelf_id": 14,
+      "shelf_x": 462.5,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 20,
+      "name": "Mother Dairy Classic Thick Dahi",
+      "brand": "Mother Dairy",
+      "category_id": 2,
+      "category": {
+        "id": 2,
+        "name": "Dairy, Bread & Eggs",
+        "slug": "dairy-bread-eggs",
+        "icon": "\ud83e\udd5b",
+        "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 2
+      },
+      "description": "Traditional thick set curd with live probiotic goodness.",
+      "image_url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "400 g cup",
+      "price": 35.0,
+      "original_price": 35.0,
+      "discount_pct": 0,
+      "stock": 80,
+      "is_available": true,
+      "shelf_id": 14,
+      "shelf_x": 462.5,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 21,
+      "name": "Amul Pasteurized Salted Butter",
+      "brand": "Amul",
+      "category_id": 2,
+      "category": {
+        "id": 2,
+        "name": "Dairy, Bread & Eggs",
+        "slug": "dairy-bread-eggs",
+        "icon": "\ud83e\udd5b",
+        "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 2
+      },
+      "description": "Utterly butterly delicious creamy table butter.",
+      "image_url": "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "500 g block",
+      "price": 275.0,
+      "original_price": 285.0,
+      "discount_pct": 3,
+      "stock": 70,
+      "is_available": true,
+      "shelf_id": 15,
+      "shelf_x": 462.5,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 22,
+      "name": "Britannia 100% Whole Wheat Brown Bread",
+      "brand": "Britannia",
+      "category_id": 2,
+      "category": {
+        "id": 2,
+        "name": "Dairy, Bread & Eggs",
+        "slug": "dairy-bread-eggs",
+        "icon": "\ud83e\udd5b",
+        "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 2
+      },
+      "description": "Freshly baked whole wheat bread with high dietary fiber.",
+      "image_url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "400 g loaf",
+      "price": 50.0,
+      "original_price": 55.0,
+      "discount_pct": 9,
+      "stock": 65,
+      "is_available": true,
+      "shelf_id": 15,
+      "shelf_x": 462.5,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 23,
+      "name": "Farm Fresh Grade-A White Eggs",
+      "brand": "Farm Fresh",
+      "category_id": 2,
+      "category": {
+        "id": 2,
+        "name": "Dairy, Bread & Eggs",
+        "slug": "dairy-bread-eggs",
+        "icon": "\ud83e\udd5b",
+        "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 2
+      },
+      "description": "Nutritious protein-rich fresh farm eggs, sanitized and carefully boxed.",
+      "image_url": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "Pack of 12",
+      "price": 98.0,
+      "original_price": 115.0,
+      "discount_pct": 14,
+      "stock": 90,
+      "is_available": true,
+      "shelf_id": 15,
+      "shelf_x": 462.5,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 24,
+      "name": "Amul Processed Cheese Cubes",
+      "brand": "Amul",
+      "category_id": 2,
+      "category": {
+        "id": 2,
+        "name": "Dairy, Bread & Eggs",
+        "slug": "dairy-bread-eggs",
+        "icon": "\ud83e\udd5b",
+        "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 2
+      },
+      "description": "Individual foil wrapped delicious processed cheese cubes.",
+      "image_url": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "200 g (8 cubes)",
+      "price": 135.0,
+      "original_price": 145.0,
+      "discount_pct": 6,
+      "stock": 45,
+      "is_available": true,
+      "shelf_id": 15,
+      "shelf_x": 462.5,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 25,
+      "name": "Aashirvaad Shudh 100% Whole Wheat Chakki Atta",
+      "brand": "Aashirvaad",
+      "category_id": 5,
+      "category": {
+        "id": 5,
+        "name": "Atta, Rice, Oil & Dals",
+        "slug": "atta-rice-oil-dals",
+        "icon": "\ud83c\udf3e",
+        "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 5
+      },
+      "description": "Superior 4-step chakki milled whole wheat flour for extra soft rotis.",
+      "image_url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "5 kg bag",
+      "price": 245.0,
+      "original_price": 285.0,
+      "discount_pct": 14,
+      "stock": 60,
+      "is_available": true,
+      "shelf_id": 11,
+      "shelf_x": 332.5,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 26,
+      "name": "Fortune Besan Gram Flour",
+      "brand": "Fortune",
+      "category_id": 5,
+      "category": {
+        "id": 5,
+        "name": "Atta, Rice, Oil & Dals",
+        "slug": "atta-rice-oil-dals",
+        "icon": "\ud83c\udf3e",
+        "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 5
+      },
+      "description": "100% chana dal fine ground besan for crispy pakoras and sweets.",
+      "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg pack",
+      "price": 95.0,
+      "original_price": 110.0,
+      "discount_pct": 13,
+      "stock": 40,
+      "is_available": true,
+      "shelf_id": 11,
+      "shelf_x": 332.5,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 27,
+      "name": "Fortune Rozana Premium Basmati Rice",
+      "brand": "Fortune",
+      "category_id": 5,
+      "category": {
+        "id": 5,
+        "name": "Atta, Rice, Oil & Dals",
+        "slug": "atta-rice-oil-dals",
+        "icon": "\ud83c\udf3e",
+        "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 5
+      },
+      "description": "Aromatic long grain basmati rice suitable for daily pulao and biryani.",
+      "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "5 kg bag",
+      "price": 385.0,
+      "original_price": 460.0,
+      "discount_pct": 16,
+      "stock": 50,
+      "is_available": true,
+      "shelf_id": 12,
+      "shelf_x": 332.5,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 28,
+      "name": "Fortune Everyday Sona Masoori Raw Rice",
+      "brand": "Fortune",
+      "category_id": 5,
+      "category": {
+        "id": 5,
+        "name": "Atta, Rice, Oil & Dals",
+        "slug": "atta-rice-oil-dals",
+        "icon": "\ud83c\udf3e",
+        "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 5
+      },
+      "description": "Light, fluffy and easy to digest premium aged Sona Masoori rice.",
+      "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "5 kg bag",
+      "price": 340.0,
+      "original_price": 390.0,
+      "discount_pct": 12,
+      "stock": 45,
+      "is_available": true,
+      "shelf_id": 12,
+      "shelf_x": 332.5,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 29,
+      "name": "Tata Sampann Unpolished Toor Dal",
+      "brand": "Tata Sampann",
+      "category_id": 5,
+      "category": {
+        "id": 5,
+        "name": "Atta, Rice, Oil & Dals",
+        "slug": "atta-rice-oil-dals",
+        "icon": "\ud83c\udf3e",
+        "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 5
+      },
+      "description": "Unpolished toor dal that retains natural goodness and authentic taste.",
+      "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg pack",
+      "price": 175.0,
+      "original_price": 199.0,
+      "discount_pct": 12,
+      "stock": 70,
+      "is_available": true,
+      "shelf_id": 13,
+      "shelf_x": 332.5,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 30,
+      "name": "Tata Sampann Yellow Moong Dal Dhuli",
+      "brand": "Tata Sampann",
+      "category_id": 5,
+      "category": {
+        "id": 5,
+        "name": "Atta, Rice, Oil & Dals",
+        "slug": "atta-rice-oil-dals",
+        "icon": "\ud83c\udf3e",
+        "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 5
+      },
+      "description": "Quick cooking unpolished yellow split moong dal, rich in protein.",
+      "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg pack",
+      "price": 155.0,
+      "original_price": 175.0,
+      "discount_pct": 11,
+      "stock": 60,
+      "is_available": true,
+      "shelf_id": 13,
+      "shelf_x": 332.5,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 31,
+      "name": "Tata Sampann Premium Kabuli Chana",
+      "brand": "Tata Sampann",
+      "category_id": 5,
+      "category": {
+        "id": 5,
+        "name": "Atta, Rice, Oil & Dals",
+        "slug": "atta-rice-oil-dals",
+        "icon": "\ud83c\udf3e",
+        "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 5
+      },
+      "description": "Jumbo size white chickpeas, delicious for North Indian chhole.",
+      "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "500 g pack",
+      "price": 95.0,
+      "original_price": 110.0,
+      "discount_pct": 13,
+      "stock": 55,
+      "is_available": true,
+      "shelf_id": 13,
+      "shelf_x": 332.5,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 32,
+      "name": "Fortune Sunlite Refined Sunflower Oil",
+      "brand": "Fortune",
+      "category_id": 5,
+      "category": {
+        "id": 5,
+        "name": "Atta, Rice, Oil & Dals",
+        "slug": "atta-rice-oil-dals",
+        "icon": "\ud83c\udf3e",
+        "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 5
+      },
+      "description": "Light, healthy cooking oil enriched with Vitamins A & D.",
+      "image_url": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 L Pouch",
+      "price": 135.0,
+      "original_price": 160.0,
+      "discount_pct": 15,
+      "stock": 80,
+      "is_available": true,
+      "shelf_id": 16,
+      "shelf_x": 462.5,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 33,
+      "name": "Dhara Kachi Ghani Pure Mustard Oil",
+      "brand": "Dhara",
+      "category_id": 5,
+      "category": {
+        "id": 5,
+        "name": "Atta, Rice, Oil & Dals",
+        "slug": "atta-rice-oil-dals",
+        "icon": "\ud83c\udf3e",
+        "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 5
+      },
+      "description": "Cold pressed pure mustard oil with strong authentic aroma and pungency.",
+      "image_url": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 L Bottle",
+      "price": 152.0,
+      "original_price": 175.0,
+      "discount_pct": 13,
+      "stock": 60,
+      "is_available": true,
+      "shelf_id": 16,
+      "shelf_x": 462.5,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 34,
+      "name": "Amul Pure Cow Ghee Carton",
+      "brand": "Amul",
+      "category_id": 5,
+      "category": {
+        "id": 5,
+        "name": "Atta, Rice, Oil & Dals",
+        "slug": "atta-rice-oil-dals",
+        "icon": "\ud83c\udf3e",
+        "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 5
+      },
+      "description": "Granular golden cow ghee with rich traditional taste and wellness aroma.",
+      "image_url": "https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 L Carton",
+      "price": 620.0,
+      "original_price": 675.0,
+      "discount_pct": 8,
+      "stock": 40,
+      "is_available": true,
+      "shelf_id": 16,
+      "shelf_x": 462.5,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 35,
+      "name": "Everest Pure Turmeric Powder (Haldi)",
+      "brand": "Everest",
+      "category_id": 6,
+      "category": {
+        "id": 6,
+        "name": "Masala & Spices",
+        "slug": "masala-spices",
+        "icon": "\ud83c\udf36\ufe0f",
+        "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 6
+      },
+      "description": "High curcumin bright yellow turmeric powder for vibrant color and aroma.",
+      "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "200 g pack",
+      "price": 62.0,
+      "original_price": 72.0,
+      "discount_pct": 13,
+      "stock": 85,
+      "is_available": true,
+      "shelf_id": 20,
+      "shelf_x": 685.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 36,
+      "name": "Everest Kashmiri Lal Mirch Powder",
+      "brand": "Everest",
+      "category_id": 6,
+      "category": {
+        "id": 6,
+        "name": "Masala & Spices",
+        "slug": "masala-spices",
+        "icon": "\ud83c\udf36\ufe0f",
+        "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 6
+      },
+      "description": "Mild heat, deep fiery red color spice powder for restaurant-style gravies.",
+      "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "100 g pack",
+      "price": 78.0,
+      "original_price": 90.0,
+      "discount_pct": 13,
+      "stock": 90,
+      "is_available": true,
+      "shelf_id": 20,
+      "shelf_x": 685.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 37,
+      "name": "Everest Coriander Powder (Dhaniya)",
+      "brand": "Everest",
+      "category_id": 6,
+      "category": {
+        "id": 6,
+        "name": "Masala & Spices",
+        "slug": "masala-spices",
+        "icon": "\ud83c\udf36\ufe0f",
+        "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 6
+      },
+      "description": "Ground from fresh aromatic coriander seeds for wholesome Indian dishes.",
+      "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "200 g pack",
+      "price": 68.0,
+      "original_price": 78.0,
+      "discount_pct": 12,
+      "stock": 70,
+      "is_available": true,
+      "shelf_id": 20,
+      "shelf_x": 685.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 38,
+      "name": "MDH Chunky Chat Masala",
+      "brand": "MDH",
+      "category_id": 6,
+      "category": {
+        "id": 6,
+        "name": "Masala & Spices",
+        "slug": "masala-spices",
+        "icon": "\ud83c\udf36\ufe0f",
+        "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 6
+      },
+      "description": "Tangy zesty spice blend for fruit salads, snacks, and chaats.",
+      "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "100 g box",
+      "price": 74.0,
+      "original_price": 85.0,
+      "discount_pct": 12,
+      "stock": 65,
+      "is_available": true,
+      "shelf_id": 20,
+      "shelf_x": 685.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 39,
+      "name": "Tata Salt Vacuum Evaporated Iodised",
+      "brand": "Tata",
+      "category_id": 6,
+      "category": {
+        "id": 6,
+        "name": "Masala & Spices",
+        "slug": "masala-spices",
+        "icon": "\ud83c\udf36\ufe0f",
+        "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 6
+      },
+      "description": "Desh Ka Namak \u2014 pure vacuum evaporated iodised cooking salt.",
+      "image_url": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg pack",
+      "price": 28.0,
+      "original_price": 30.0,
+      "discount_pct": 6,
+      "stock": 150,
+      "is_available": true,
+      "shelf_id": 20,
+      "shelf_x": 685.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 40,
+      "name": "Catch Pure Black Pepper Sprinkler",
+      "brand": "Catch",
+      "category_id": 6,
+      "category": {
+        "id": 6,
+        "name": "Masala & Spices",
+        "slug": "masala-spices",
+        "icon": "\ud83c\udf36\ufe0f",
+        "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 6
+      },
+      "description": "Finely ground bold black peppercorns in a table shaker dispenser.",
+      "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "50 g sprinkler",
+      "price": 85.0,
+      "original_price": 99.0,
+      "discount_pct": 14,
+      "stock": 50,
+      "is_available": true,
+      "shelf_id": 20,
+      "shelf_x": 685.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 41,
+      "name": "Lay's India's Magic Masala Potato Chips",
+      "brand": "Lay's",
+      "category_id": 3,
+      "category": {
+        "id": 3,
+        "name": "Snacks & Munchies",
+        "slug": "snacks-munchies",
+        "icon": "\ud83c\udf7f",
+        "image_url": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 3
+      },
+      "description": "Ridged crunchy potato chips tossed in spicy Indian magic masalas.",
+      "image_url": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "50 g pouch",
+      "price": 20.0,
+      "original_price": 20.0,
+      "discount_pct": 0,
+      "stock": 120,
+      "is_available": true,
+      "shelf_id": 17,
+      "shelf_x": 575.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 42,
+      "name": "Kurkure Masala Munch Crispy Snack",
+      "brand": "Kurkure",
+      "category_id": 3,
+      "category": {
+        "id": 3,
+        "name": "Snacks & Munchies",
+        "slug": "snacks-munchies",
+        "icon": "\ud83c\udf7f",
+        "image_url": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 3
+      },
+      "description": "Crispy puffed corn puffs flavored with bold spices and chatpata zest.",
+      "image_url": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "85 g pouch",
+      "price": 20.0,
+      "original_price": 20.0,
+      "discount_pct": 0,
+      "stock": 110,
+      "is_available": true,
+      "shelf_id": 17,
+      "shelf_x": 575.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 43,
+      "name": "Haldiram's Nagpur Crisp Aloo Bhujia",
+      "brand": "Haldiram's",
+      "category_id": 3,
+      "category": {
+        "id": 3,
+        "name": "Snacks & Munchies",
+        "slug": "snacks-munchies",
+        "icon": "\ud83c\udf7f",
+        "image_url": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 3
+      },
+      "description": "Minty, spicy potato and gram flour crisp strings for tea-time.",
+      "image_url": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "200 g pack",
+      "price": 58.0,
+      "original_price": 65.0,
+      "discount_pct": 10,
+      "stock": 75,
+      "is_available": true,
+      "shelf_id": 17,
+      "shelf_x": 575.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 44,
+      "name": "Doritos Sweet Chilli Tortilla Nachos",
+      "brand": "Doritos",
+      "category_id": 3,
+      "category": {
+        "id": 3,
+        "name": "Snacks & Munchies",
+        "slug": "snacks-munchies",
+        "icon": "\ud83c\udf7f",
+        "image_url": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 3
+      },
+      "description": "Bold triangle corn chips with sweet and spicy Mexican seasoning.",
+      "image_url": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "75 g pouch",
+      "price": 35.0,
+      "original_price": 40.0,
+      "discount_pct": 12,
+      "stock": 60,
+      "is_available": true,
+      "shelf_id": 17,
+      "shelf_x": 575.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 45,
+      "name": "Act II Instant Golden Popcorn Butter Delite",
+      "brand": "Act II",
+      "category_id": 3,
+      "category": {
+        "id": 3,
+        "name": "Snacks & Munchies",
+        "slug": "snacks-munchies",
+        "icon": "\ud83c\udf7f",
+        "image_url": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 3
+      },
+      "description": "Hot and fresh microwave or pressure cooker theater-style butter popcorn.",
+      "image_url": "https://images.unsplash.com/photo-1578849278619-e73505e9610f?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "150 g pack",
+      "price": 45.0,
+      "original_price": 50.0,
+      "discount_pct": 10,
+      "stock": 50,
+      "is_available": true,
+      "shelf_id": 17,
+      "shelf_x": 575.0,
+      "shelf_y": 227.5
+    },
+    {
+      "id": 46,
+      "name": "Britannia Good Day Butter Cookies",
+      "brand": "Britannia",
+      "category_id": 7,
+      "category": {
+        "id": 7,
+        "name": "Bakery & Biscuits",
+        "slug": "bakery-biscuits",
+        "icon": "\ud83c\udf6a",
+        "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 7
+      },
+      "description": "Rich buttery cookies topped with smiling ridges and delightful crunch.",
+      "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "600 g Party Pack",
+      "price": 115.0,
+      "original_price": 140.0,
+      "discount_pct": 17,
+      "stock": 60,
+      "is_available": true,
+      "shelf_id": 18,
+      "shelf_x": 575.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 47,
+      "name": "Parle-G Gold Glucose Biscuits",
+      "brand": "Parle",
+      "category_id": 7,
+      "category": {
+        "id": 7,
+        "name": "Bakery & Biscuits",
+        "slug": "bakery-biscuits",
+        "icon": "\ud83c\udf6a",
+        "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 7
+      },
+      "description": "India's beloved teatime biscuit, packed with milk and wheat nourishment.",
+      "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg Mega Pack",
+      "price": 110.0,
+      "original_price": 120.0,
+      "discount_pct": 8,
+      "stock": 90,
+      "is_available": true,
+      "shelf_id": 18,
+      "shelf_x": 575.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 48,
+      "name": "Oreo Original Vanilla Creme Cookies",
+      "brand": "Cadbury Oreo",
+      "category_id": 7,
+      "category": {
+        "id": 7,
+        "name": "Bakery & Biscuits",
+        "slug": "bakery-biscuits",
+        "icon": "\ud83c\udf6a",
+        "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 7
+      },
+      "description": "Crunchy rich chocolate wafer cookies with a sweet vanilla creme center.",
+      "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "300 g Family Pack",
+      "price": 85.0,
+      "original_price": 100.0,
+      "discount_pct": 15,
+      "stock": 75,
+      "is_available": true,
+      "shelf_id": 18,
+      "shelf_x": 575.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 49,
+      "name": "Sunfeast Dark Fantasy Choco Fills",
+      "brand": "Sunfeast",
+      "category_id": 7,
+      "category": {
+        "id": 7,
+        "name": "Bakery & Biscuits",
+        "slug": "bakery-biscuits",
+        "icon": "\ud83c\udf6a",
+        "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 7
+      },
+      "description": "Crisp baked cookie shell with a molten chocolate lava heart.",
+      "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "300 g Box",
+      "price": 130.0,
+      "original_price": 160.0,
+      "discount_pct": 18,
+      "stock": 50,
+      "is_available": true,
+      "shelf_id": 18,
+      "shelf_x": 575.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 50,
+      "name": "Britannia Little Hearts Sweet & Salty",
+      "brand": "Britannia",
+      "category_id": 7,
+      "category": {
+        "id": 7,
+        "name": "Bakery & Biscuits",
+        "slug": "bakery-biscuits",
+        "icon": "\ud83c\udf6a",
+        "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 7
+      },
+      "description": "Sugar-glazed cute heart-shaped puff biscuits that melt in your mouth.",
+      "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "75 g pack",
+      "price": 25.0,
+      "original_price": 25.0,
+      "discount_pct": 0,
+      "stock": 70,
+      "is_available": true,
+      "shelf_id": 18,
+      "shelf_x": 575.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 51,
+      "name": "Coca-Cola Original Taste Soft Drink",
+      "brand": "Coca-Cola",
+      "category_id": 4,
+      "category": {
+        "id": 4,
+        "name": "Cold Drinks & Juices",
+        "slug": "cold-drinks-juices",
+        "icon": "\ud83e\udd64",
+        "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 4
+      },
+      "description": "The world's favorite sparkling cola drink, crisp and refreshing.",
+      "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "750 ml Bottle",
+      "price": 40.0,
+      "original_price": 40.0,
+      "discount_pct": 0,
+      "stock": 100,
+      "is_available": true,
+      "shelf_id": 21,
+      "shelf_x": 685.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 52,
+      "name": "Thums Up Charged Carbonated Beverage",
+      "brand": "Thums Up",
+      "category_id": 4,
+      "category": {
+        "id": 4,
+        "name": "Cold Drinks & Juices",
+        "slug": "cold-drinks-juices",
+        "icon": "\ud83e\udd64",
+        "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 4
+      },
+      "description": "Bold, fizzy and strong cola drink with a spicy punch of taste.",
+      "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "750 ml Bottle",
+      "price": 40.0,
+      "original_price": 40.0,
+      "discount_pct": 0,
+      "stock": 90,
+      "is_available": true,
+      "shelf_id": 21,
+      "shelf_x": 685.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 53,
+      "name": "Real Fruit Power Mixed Fruit Juice",
+      "brand": "Real",
+      "category_id": 4,
+      "category": {
+        "id": 4,
+        "name": "Cold Drinks & Juices",
+        "slug": "cold-drinks-juices",
+        "icon": "\ud83e\udd64",
+        "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 4
+      },
+      "description": "9 nutrient-rich fruits blended into wholesome delicious natural juice.",
+      "image_url": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 L Tetrapack",
+      "price": 115.0,
+      "original_price": 130.0,
+      "discount_pct": 11,
+      "stock": 60,
+      "is_available": true,
+      "shelf_id": 21,
+      "shelf_x": 685.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 54,
+      "name": "Red Bull Energy Drink Can",
+      "brand": "Red Bull",
+      "category_id": 4,
+      "category": {
+        "id": 4,
+        "name": "Cold Drinks & Juices",
+        "slug": "cold-drinks-juices",
+        "icon": "\ud83e\udd64",
+        "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 4
+      },
+      "description": "Wiiings when you need them \u2014 revitalizes body and mind with caffeine & B-vitamins.",
+      "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "250 ml Can",
+      "price": 120.0,
+      "original_price": 125.0,
+      "discount_pct": 4,
+      "stock": 50,
+      "is_available": true,
+      "shelf_id": 21,
+      "shelf_x": 685.0,
+      "shelf_y": 312.5
+    },
+    {
+      "id": 55,
+      "name": "Bisleri Packaged Drinking Mineral Water",
+      "brand": "Bisleri",
+      "category_id": 4,
+      "category": {
+        "id": 4,
+        "name": "Cold Drinks & Juices",
+        "slug": "cold-drinks-juices",
+        "icon": "\ud83e\udd64",
+        "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 4
+      },
+      "description": "10-step purified natural mineral water with added minerals.",
+      "image_url": "https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 L Bottle",
+      "price": 20.0,
+      "original_price": 20.0,
+      "discount_pct": 0,
+      "stock": 180,
+      "is_available": true,
+      "shelf_id": 22,
+      "shelf_x": 685.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 56,
+      "name": "Tata Tea Gold Rich Taste & Aroma",
+      "brand": "Tata Tea",
+      "category_id": 4,
+      "category": {
+        "id": 4,
+        "name": "Cold Drinks & Juices",
+        "slug": "cold-drinks-juices",
+        "icon": "\ud83e\udd64",
+        "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 4
+      },
+      "description": "Fine blend of gently rolled Assam leaves with long aroma teas.",
+      "image_url": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "500 g pack",
+      "price": 280.0,
+      "original_price": 320.0,
+      "discount_pct": 12,
+      "stock": 60,
+      "is_available": true,
+      "shelf_id": 22,
+      "shelf_x": 685.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 57,
+      "name": "Nescaf\u00e9 Classic 100% Pure Instant Coffee",
+      "brand": "Nescaf\u00e9",
+      "category_id": 4,
+      "category": {
+        "id": 4,
+        "name": "Cold Drinks & Juices",
+        "slug": "cold-drinks-juices",
+        "icon": "\ud83e\udd64",
+        "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 4
+      },
+      "description": "Medium-dark roasted pure Robusta beans for bold flavor and morning awakening.",
+      "image_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "100 g Glass Jar",
+      "price": 310.0,
+      "original_price": 345.0,
+      "discount_pct": 10,
+      "stock": 45,
+      "is_available": true,
+      "shelf_id": 22,
+      "shelf_x": 685.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 58,
+      "name": "Maggi 2-Minute Masala Instant Noodles",
+      "brand": "Maggi",
+      "category_id": 10,
+      "category": {
+        "id": 10,
+        "name": "Instant Food & Noodles",
+        "slug": "instant-food-noodles",
+        "icon": "\ud83c\udf5c",
+        "image_url": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 10
+      },
+      "description": "India's favorite instant noodles with the iconic blend of roasted spices.",
+      "image_url": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "840 g (Pack of 12)",
+      "price": 168.0,
+      "original_price": 180.0,
+      "discount_pct": 7,
+      "stock": 110,
+      "is_available": true,
+      "shelf_id": 19,
+      "shelf_x": 575.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 59,
+      "name": "Sunfeast Yippee! Mood Masala Noodles",
+      "brand": "Sunfeast",
+      "category_id": 10,
+      "category": {
+        "id": 10,
+        "name": "Instant Food & Noodles",
+        "slug": "instant-food-noodles",
+        "icon": "\ud83c\udf5c",
+        "image_url": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 10
+      },
+      "description": "Non-sticky round noodles with 2 spice sachets to match your spice mood.",
+      "image_url": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "280 g (Pack of 4)",
+      "price": 55.0,
+      "original_price": 60.0,
+      "discount_pct": 8,
+      "stock": 70,
+      "is_available": true,
+      "shelf_id": 19,
+      "shelf_x": 575.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 60,
+      "name": "Kellogg's Corn Flakes Original",
+      "brand": "Kellogg's",
+      "category_id": 10,
+      "category": {
+        "id": 10,
+        "name": "Instant Food & Noodles",
+        "slug": "instant-food-noodles",
+        "icon": "\ud83c\udf5c",
+        "image_url": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 10
+      },
+      "description": "Crisp golden sun-ripened corn flakes loaded with 8 essential vitamins.",
+      "image_url": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "475 g Box",
+      "price": 185.0,
+      "original_price": 210.0,
+      "discount_pct": 11,
+      "stock": 45,
+      "is_available": true,
+      "shelf_id": 19,
+      "shelf_x": 575.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 61,
+      "name": "Quaker 100% Wholegrain Rolled Oats",
+      "brand": "Quaker",
+      "category_id": 10,
+      "category": {
+        "id": 10,
+        "name": "Instant Food & Noodles",
+        "slug": "instant-food-noodles",
+        "icon": "\ud83c\udf5c",
+        "image_url": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 10
+      },
+      "description": "Heart healthy wholegrain quick cooking oats, rich in beta-glucan fiber.",
+      "image_url": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 kg Pouch",
+      "price": 190.0,
+      "original_price": 215.0,
+      "discount_pct": 11,
+      "stock": 50,
+      "is_available": true,
+      "shelf_id": 19,
+      "shelf_x": 575.0,
+      "shelf_y": 397.5
+    },
+    {
+      "id": 62,
+      "name": "Colgate Strong Teeth Dental Cream Toothpaste",
+      "brand": "Colgate",
+      "category_id": 8,
+      "category": {
+        "id": 8,
+        "name": "Personal Care",
+        "slug": "personal-care",
+        "icon": "\ud83e\uddf4",
+        "image_url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 8
+      },
+      "description": "Amino Shakti formula that provides 2x strengthening of tooth enamel.",
+      "image_url": "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "500 g Saver Pack",
+      "price": 175.0,
+      "original_price": 199.0,
+      "discount_pct": 12,
+      "stock": 70,
+      "is_available": true,
+      "shelf_id": 1,
+      "shelf_x": 165.0,
+      "shelf_y": 80.0
+    },
+    {
+      "id": 63,
+      "name": "Dettol Original Germ Protection Bathing Soap",
+      "brand": "Dettol",
+      "category_id": 8,
+      "category": {
+        "id": 8,
+        "name": "Personal Care",
+        "slug": "personal-care",
+        "icon": "\ud83e\uddf4",
+        "image_url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 8
+      },
+      "description": "Trusted antiseptic pine fragrance bar soap providing 99.9% germ defense.",
+      "image_url": "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "Pack of 4 x 125g",
+      "price": 195.0,
+      "original_price": 230.0,
+      "discount_pct": 15,
+      "stock": 80,
+      "is_available": true,
+      "shelf_id": 1,
+      "shelf_x": 165.0,
+      "shelf_y": 80.0
+    },
+    {
+      "id": 64,
+      "name": "Head & Shoulders Cool Menthol Anti-Dandruff Shampoo",
+      "brand": "Head & Shoulders",
+      "category_id": 8,
+      "category": {
+        "id": 8,
+        "name": "Personal Care",
+        "slug": "personal-care",
+        "icon": "\ud83e\uddf4",
+        "image_url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 8
+      },
+      "description": "Cooling menthol formula leaves hair up to 100% dandruff free with fresh feel.",
+      "image_url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "340 ml Bottle",
+      "price": 285.0,
+      "original_price": 340.0,
+      "discount_pct": 16,
+      "stock": 55,
+      "is_available": true,
+      "shelf_id": 2,
+      "shelf_x": 295.0,
+      "shelf_y": 80.0
+    },
+    {
+      "id": 65,
+      "name": "Nivea Soft Light Non-Greasy Moisturising Cream",
+      "brand": "Nivea",
+      "category_id": 8,
+      "category": {
+        "id": 8,
+        "name": "Personal Care",
+        "slug": "personal-care",
+        "icon": "\ud83e\uddf4",
+        "image_url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 8
+      },
+      "description": "Fast absorbing everyday face, hand and body moisturizer with Jojoba oil.",
+      "image_url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "200 ml Tub",
+      "price": 240.0,
+      "original_price": 299.0,
+      "discount_pct": 19,
+      "stock": 50,
+      "is_available": true,
+      "shelf_id": 2,
+      "shelf_x": 295.0,
+      "shelf_y": 80.0
+    },
+    {
+      "id": 66,
+      "name": "Dove Deep Moisture Nourishing Body Wash",
+      "brand": "Dove",
+      "category_id": 8,
+      "category": {
+        "id": 8,
+        "name": "Personal Care",
+        "slug": "personal-care",
+        "icon": "\ud83e\uddf4",
+        "image_url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 8
+      },
+      "description": "Sulfate-free microbiome gentle body wash for instantly soft, smooth skin.",
+      "image_url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "400 ml Bottle",
+      "price": 275.0,
+      "original_price": 325.0,
+      "discount_pct": 15,
+      "stock": 45,
+      "is_available": true,
+      "shelf_id": 2,
+      "shelf_x": 295.0,
+      "shelf_y": 80.0
+    },
+    {
+      "id": 67,
+      "name": "Surf Excel Matic Front Load Liquid Detergent",
+      "brand": "Surf Excel",
+      "category_id": 9,
+      "category": {
+        "id": 9,
+        "name": "Cleaning & Household",
+        "slug": "cleaning-household",
+        "icon": "\ud83e\uddf9",
+        "image_url": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 9
+      },
+      "description": "Penetrates deep into fabric fibers to remove tough stains in washing machines.",
+      "image_url": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "2 L Bottle",
+      "price": 399.0,
+      "original_price": 450.0,
+      "discount_pct": 11,
+      "stock": 65,
+      "is_available": true,
+      "shelf_id": 3,
+      "shelf_x": 485.0,
+      "shelf_y": 80.0
+    },
+    {
+      "id": 68,
+      "name": "Ariel Matic 3-in-1 Top Load Detergent Powder",
+      "brand": "Ariel",
+      "category_id": 9,
+      "category": {
+        "id": 9,
+        "name": "Cleaning & Household",
+        "slug": "cleaning-household",
+        "icon": "\ud83e\uddf9",
+        "image_url": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 9
+      },
+      "description": "Brightens whites and colors while providing deep stain removal in 1 wash.",
+      "image_url": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "2 kg Bag",
+      "price": 360.0,
+      "original_price": 410.0,
+      "discount_pct": 12,
+      "stock": 50,
+      "is_available": true,
+      "shelf_id": 3,
+      "shelf_x": 485.0,
+      "shelf_y": 80.0
+    },
+    {
+      "id": 69,
+      "name": "Vim Lemon Dishwash Gel Bottle",
+      "brand": "Vim",
+      "category_id": 9,
+      "category": {
+        "id": 9,
+        "name": "Cleaning & Household",
+        "slug": "cleaning-household",
+        "icon": "\ud83e\uddf9",
+        "image_url": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 9
+      },
+      "description": "Concentrated lemon power cuts through stubborn burnt grease with 1 spoon.",
+      "image_url": "https://images.unsplash.com/photo-1584813470613-5b1c1cad3d69?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "750 ml Bottle",
+      "price": 140.0,
+      "original_price": 165.0,
+      "discount_pct": 15,
+      "stock": 90,
+      "is_available": true,
+      "shelf_id": 4,
+      "shelf_x": 615.0,
+      "shelf_y": 80.0
+    },
+    {
+      "id": 70,
+      "name": "Harpic Power Plus 10x Disinfectant Toilet Cleaner",
+      "brand": "Harpic",
+      "category_id": 9,
+      "category": {
+        "id": 9,
+        "name": "Cleaning & Household",
+        "slug": "cleaning-household",
+        "icon": "\ud83e\uddf9",
+        "image_url": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 9
+      },
+      "description": "Thick gel formula kills 99.9% germs and eliminates tough limescale stains.",
+      "image_url": "https://images.unsplash.com/photo-1584813470613-5b1c1cad3d69?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 L Bottle",
+      "price": 185.0,
+      "original_price": 210.0,
+      "discount_pct": 11,
+      "stock": 80,
+      "is_available": true,
+      "shelf_id": 4,
+      "shelf_x": 615.0,
+      "shelf_y": 80.0
+    },
+    {
+      "id": 71,
+      "name": "Lizol 3-in-1 Disinfectant Surface Cleaner Citrus",
+      "brand": "Lizol",
+      "category_id": 9,
+      "category": {
+        "id": 9,
+        "name": "Cleaning & Household",
+        "slug": "cleaning-household",
+        "icon": "\ud83e\uddf9",
+        "image_url": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 9
+      },
+      "description": "Provides 10x better germ protection than standard phenyls with lasting freshness.",
+      "image_url": "https://images.unsplash.com/photo-1584813470613-5b1c1cad3d69?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "1 L Bottle",
+      "price": 199.0,
+      "original_price": 225.0,
+      "discount_pct": 11,
+      "stock": 70,
+      "is_available": true,
+      "shelf_id": 4,
+      "shelf_x": 615.0,
+      "shelf_y": 80.0
+    },
+    {
+      "id": 72,
+      "name": "Colin Glass and Multi-Surface Cleaner Spray",
+      "brand": "Colin",
+      "category_id": 9,
+      "category": {
+        "id": 9,
+        "name": "Cleaning & Household",
+        "slug": "cleaning-household",
+        "icon": "\ud83e\uddf9",
+        "image_url": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+        "sort_order": 9
+      },
+      "description": "Shine booster formula delivers sparkling streak-free glass, car and mirror surfaces.",
+      "image_url": "https://images.unsplash.com/photo-1584813470613-5b1c1cad3d69?auto=format&fit=crop&w=600&q=80",
+      "quantity_label": "500 ml Spray",
+      "price": 98.0,
+      "original_price": 115.0,
+      "discount_pct": 14,
+      "stock": 85,
+      "is_available": true,
+      "shelf_id": 4,
+      "shelf_x": 615.0,
+      "shelf_y": 80.0
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Fruits & Vegetables",
+      "slug": "fruits-vegetables",
+      "icon": "\ud83e\udd66",
+      "image_url": "https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=80",
+      "sort_order": 1
+    },
+    {
+      "id": 2,
+      "name": "Dairy, Bread & Eggs",
+      "slug": "dairy-bread-eggs",
+      "icon": "\ud83e\udd5b",
+      "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+      "sort_order": 2
+    },
+    {
+      "id": 3,
+      "name": "Snacks & Munchies",
+      "slug": "snacks-munchies",
+      "icon": "\ud83c\udf7f",
+      "image_url": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+      "sort_order": 3
+    },
+    {
+      "id": 4,
+      "name": "Cold Drinks & Juices",
+      "slug": "cold-drinks-juices",
+      "icon": "\ud83e\udd64",
+      "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+      "sort_order": 4
+    },
+    {
+      "id": 5,
+      "name": "Atta, Rice, Oil & Dals",
+      "slug": "atta-rice-oil-dals",
+      "icon": "\ud83c\udf3e",
+      "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+      "sort_order": 5
+    },
+    {
+      "id": 6,
+      "name": "Masala & Spices",
+      "slug": "masala-spices",
+      "icon": "\ud83c\udf36\ufe0f",
+      "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80",
+      "sort_order": 6
+    },
+    {
+      "id": 7,
+      "name": "Bakery & Biscuits",
+      "slug": "bakery-biscuits",
+      "icon": "\ud83c\udf6a",
+      "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+      "sort_order": 7
+    },
+    {
+      "id": 8,
+      "name": "Personal Care",
+      "slug": "personal-care",
+      "icon": "\ud83e\uddf4",
+      "image_url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+      "sort_order": 8
+    },
+    {
+      "id": 9,
+      "name": "Cleaning & Household",
+      "slug": "cleaning-household",
+      "icon": "\ud83e\uddf9",
+      "image_url": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=600&q=80",
+      "sort_order": 9
+    },
+    {
+      "id": 10,
+      "name": "Instant Food & Noodles",
+      "slug": "instant-food-noodles",
+      "icon": "\ud83c\udf5c",
+      "image_url": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80",
+      "sort_order": 10
+    }
+  ],
+  "store_map": {
+    "sections": [
+      {
+        "id": 1,
+        "name": "Personal Care & Household",
+        "color": "#E0F2FE",
+        "x": 60.0,
+        "y": 40.0,
+        "width": 680.0,
+        "height": 110.0,
+        "aisles": [
+          {
+            "id": 1,
+            "name": "Personal Care",
+            "aisle_number": 1,
+            "shelves": [
+              {
+                "id": 1,
+                "name": "Oral Care & Soaps",
+                "x": 120.0,
+                "y": 65.0,
+                "width": 90.0,
+                "height": 30.0
+              },
+              {
+                "id": 2,
+                "name": "Hair & Skin Care",
+                "x": 250.0,
+                "y": 65.0,
+                "width": 90.0,
+                "height": 30.0
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Cleaning & Household",
+            "aisle_number": 2,
+            "shelves": [
+              {
+                "id": 3,
+                "name": "Laundry & Detergents",
+                "x": 440.0,
+                "y": 65.0,
+                "width": 90.0,
+                "height": 30.0
+              },
+              {
+                "id": 4,
+                "name": "Cleaners & Paper Goods",
+                "x": 570.0,
+                "y": 65.0,
+                "width": 90.0,
+                "height": 30.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Fresh Produce",
+        "color": "#DCFCE7",
+        "x": 60.0,
+        "y": 170.0,
+        "width": 200.0,
+        "height": 290.0,
+        "aisles": [
+          {
+            "id": 3,
+            "name": "Fresh Fruits",
+            "aisle_number": 3,
+            "shelves": [
+              {
+                "id": 5,
+                "name": "Seasonal & Exotic Fruits",
+                "x": 65.0,
+                "y": 210.0,
+                "width": 60.0,
+                "height": 35.0
+              },
+              {
+                "id": 6,
+                "name": "Apples, Pears & Citrus",
+                "x": 65.0,
+                "y": 295.0,
+                "width": 60.0,
+                "height": 35.0
+              },
+              {
+                "id": 7,
+                "name": "Bananas, Papaya & Melons",
+                "x": 65.0,
+                "y": 380.0,
+                "width": 60.0,
+                "height": 35.0
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Fresh Vegetables",
+            "aisle_number": 4,
+            "shelves": [
+              {
+                "id": 8,
+                "name": "Potatoes, Onions & Roots",
+                "x": 165.0,
+                "y": 210.0,
+                "width": 60.0,
+                "height": 35.0
+              },
+              {
+                "id": 9,
+                "name": "Tomatoes, Capsicum & Daily Veg",
+                "x": 165.0,
+                "y": 295.0,
+                "width": 60.0,
+                "height": 35.0
+              },
+              {
+                "id": 10,
+                "name": "Leafy Greens, Herbs & Chillies",
+                "x": 165.0,
+                "y": 380.0,
+                "width": 60.0,
+                "height": 35.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Grocery Essentials",
+        "color": "#FEF3C7",
+        "x": 280.0,
+        "y": 170.0,
+        "width": 240.0,
+        "height": 290.0,
+        "aisles": [
+          {
+            "id": 5,
+            "name": "Grains & Staples",
+            "aisle_number": 5,
+            "shelves": [
+              {
+                "id": 11,
+                "name": "Atta & Specialty Flours",
+                "x": 300.0,
+                "y": 210.0,
+                "width": 65.0,
+                "height": 35.0
+              },
+              {
+                "id": 12,
+                "name": "Rice & Basmati",
+                "x": 300.0,
+                "y": 295.0,
+                "width": 65.0,
+                "height": 35.0
+              },
+              {
+                "id": 13,
+                "name": "Dals & Pulses",
+                "x": 300.0,
+                "y": 380.0,
+                "width": 65.0,
+                "height": 35.0
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Dairy & Cooking Essentials",
+            "aisle_number": 6,
+            "shelves": [
+              {
+                "id": 14,
+                "name": "Milk, Paneer & Curd",
+                "x": 430.0,
+                "y": 210.0,
+                "width": 65.0,
+                "height": 35.0
+              },
+              {
+                "id": 15,
+                "name": "Butter, Cheese & Eggs",
+                "x": 430.0,
+                "y": 295.0,
+                "width": 65.0,
+                "height": 35.0
+              },
+              {
+                "id": 16,
+                "name": "Cooking Oils & Pure Ghee",
+                "x": 430.0,
+                "y": 380.0,
+                "width": 65.0,
+                "height": 35.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Packaged & Beverages",
+        "color": "#FCE7F3",
+        "x": 540.0,
+        "y": 170.0,
+        "width": 200.0,
+        "height": 290.0,
+        "aisles": [
+          {
+            "id": 7,
+            "name": "Snacks & Instant Foods",
+            "aisle_number": 7,
+            "shelves": [
+              {
+                "id": 17,
+                "name": "Chips, Crisps & Namkeen",
+                "x": 545.0,
+                "y": 210.0,
+                "width": 60.0,
+                "height": 35.0
+              },
+              {
+                "id": 18,
+                "name": "Biscuits & Cookies",
+                "x": 545.0,
+                "y": 295.0,
+                "width": 60.0,
+                "height": 35.0
+              },
+              {
+                "id": 19,
+                "name": "Instant Noodles & Pasta",
+                "x": 545.0,
+                "y": 380.0,
+                "width": 60.0,
+                "height": 35.0
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "name": "Drinks, Tea & Spices",
+            "aisle_number": 8,
+            "shelves": [
+              {
+                "id": 20,
+                "name": "Spices & Whole Masalas",
+                "x": 655.0,
+                "y": 210.0,
+                "width": 60.0,
+                "height": 35.0
+              },
+              {
+                "id": 21,
+                "name": "Cold Drinks & Juices",
+                "x": 655.0,
+                "y": 295.0,
+                "width": 60.0,
+                "height": 35.0
+              },
+              {
+                "id": 22,
+                "name": "Tea, Coffee & Mineral Water",
+                "x": 655.0,
+                "y": 380.0,
+                "width": 60.0,
+                "height": 35.0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "id": 1,
+        "x": 100.0,
+        "y": 550.0,
+        "label": "entrance"
+      },
+      {
+        "id": 2,
+        "x": 650.0,
+        "y": 550.0,
+        "label": "checkout"
+      },
+      {
+        "id": 3,
+        "x": 100.0,
+        "y": 510.0,
+        "label": "Entrance Concourse"
+      },
+      {
+        "id": 4,
+        "x": 145.0,
+        "y": 510.0,
+        "label": "Produce South Aisle Entry"
+      },
+      {
+        "id": 5,
+        "x": 250.0,
+        "y": 510.0,
+        "label": "South Central Walkway West"
+      },
+      {
+        "id": 6,
+        "x": 365.0,
+        "y": 510.0,
+        "label": "Grocery South Aisle Entry"
+      },
+      {
+        "id": 7,
+        "x": 505.0,
+        "y": 510.0,
+        "label": "South Central Walkway East"
+      },
+      {
+        "id": 8,
+        "x": 615.0,
+        "y": 510.0,
+        "label": "Packaged South Aisle Entry"
+      },
+      {
+        "id": 9,
+        "x": 650.0,
+        "y": 510.0,
+        "label": "Checkout Concourse"
+      },
+      {
+        "id": 10,
+        "x": 100.0,
+        "y": 460.0,
+        "label": "Produce Outer South"
+      },
+      {
+        "id": 11,
+        "x": 145.0,
+        "y": 460.0,
+        "label": "Produce Inner South"
+      },
+      {
+        "id": 12,
+        "x": 250.0,
+        "y": 460.0,
+        "label": "Produce-Grocery Hub South"
+      },
+      {
+        "id": 13,
+        "x": 365.0,
+        "y": 460.0,
+        "label": "Grocery Inner South"
+      },
+      {
+        "id": 14,
+        "x": 505.0,
+        "y": 505.0,
+        "label": "Grocery-Packaged Hub South"
+      },
+      {
+        "id": 15,
+        "x": 615.0,
+        "y": 460.0,
+        "label": "Packaged Inner South"
+      },
+      {
+        "id": 16,
+        "x": 650.0,
+        "y": 460.0,
+        "label": "Packaged Outer South"
+      },
+      {
+        "id": 17,
+        "x": 100.0,
+        "y": 397.0,
+        "label": "Produce Outer Mid-3"
+      },
+      {
+        "id": 18,
+        "x": 145.0,
+        "y": 397.0,
+        "label": "Produce Pickup (Bananas & Leafy Greens)"
+      },
+      {
+        "id": 19,
+        "x": 250.0,
+        "y": 397.0,
+        "label": "Produce-Grocery Corridor Mid-3"
+      },
+      {
+        "id": 20,
+        "x": 365.0,
+        "y": 397.0,
+        "label": "Grocery Pickup (Dals & Cooking Oils)"
+      },
+      {
+        "id": 21,
+        "x": 505.0,
+        "y": 397.0,
+        "label": "Grocery-Packaged Corridor Mid-3"
+      },
+      {
+        "id": 22,
+        "x": 615.0,
+        "y": 397.0,
+        "label": "Packaged Pickup (Noodles & Water)"
+      },
+      {
+        "id": 23,
+        "x": 650.0,
+        "y": 397.0,
+        "label": "Packaged Outer Mid-3"
+      },
+      {
+        "id": 24,
+        "x": 100.0,
+        "y": 312.0,
+        "label": "Produce Outer Mid-2"
+      },
+      {
+        "id": 25,
+        "x": 145.0,
+        "y": 312.0,
+        "label": "Produce Pickup (Apples & Tomatoes)"
+      },
+      {
+        "id": 26,
+        "x": 250.0,
+        "y": 312.0,
+        "label": "Produce-Grocery Corridor Mid-2"
+      },
+      {
+        "id": 27,
+        "x": 365.0,
+        "y": 312.0,
+        "label": "Grocery Pickup (Rice & Butter/Eggs)"
+      },
+      {
+        "id": 28,
+        "x": 505.0,
+        "y": 312.0,
+        "label": "Grocery-Packaged Corridor Mid-2"
+      },
+      {
+        "id": 29,
+        "x": 615.0,
+        "y": 312.0,
+        "label": "Packaged Pickup (Biscuits & Cold Drinks)"
+      },
+      {
+        "id": 30,
+        "x": 650.0,
+        "y": 312.0,
+        "label": "Packaged Outer Mid-2"
+      },
+      {
+        "id": 31,
+        "x": 100.0,
+        "y": 227.0,
+        "label": "Produce Outer Mid-1"
+      },
+      {
+        "id": 32,
+        "x": 145.0,
+        "y": 227.0,
+        "label": "Produce Pickup (Mangoes & Potatoes)"
+      },
+      {
+        "id": 33,
+        "x": 250.0,
+        "y": 227.0,
+        "label": "Produce-Grocery Corridor Mid-1"
+      },
+      {
+        "id": 34,
+        "x": 365.0,
+        "y": 227.0,
+        "label": "Grocery Pickup (Atta & Milk/Paneer)"
+      },
+      {
+        "id": 35,
+        "x": 505.0,
+        "y": 227.0,
+        "label": "Grocery-Packaged Corridor Mid-1"
+      },
+      {
+        "id": 36,
+        "x": 615.0,
+        "y": 227.0,
+        "label": "Packaged Pickup (Chips & Spices)"
+      },
+      {
+        "id": 37,
+        "x": 650.0,
+        "y": 227.0,
+        "label": "Packaged Outer Mid-1"
+      },
+      {
+        "id": 38,
+        "x": 100.0,
+        "y": 170.0,
+        "label": "Produce North Outer"
+      },
+      {
+        "id": 39,
+        "x": 145.0,
+        "y": 170.0,
+        "label": "Produce North Inner"
+      },
+      {
+        "id": 40,
+        "x": 250.0,
+        "y": 170.0,
+        "label": "Produce-Grocery Hub North"
+      },
+      {
+        "id": 41,
+        "x": 365.0,
+        "y": 170.0,
+        "label": "Grocery North Inner"
+      },
+      {
+        "id": 42,
+        "x": 505.0,
+        "y": 170.0,
+        "label": "Grocery-Packaged Hub North"
+      },
+      {
+        "id": 43,
+        "x": 615.0,
+        "y": 170.0,
+        "label": "Packaged North Inner"
+      },
+      {
+        "id": 44,
+        "x": 650.0,
+        "y": 170.0,
+        "label": "Packaged North Outer"
+      },
+      {
+        "id": 45,
+        "x": 100.0,
+        "y": 120.0,
+        "label": "Personal Care West Entry"
+      },
+      {
+        "id": 46,
+        "x": 165.0,
+        "y": 120.0,
+        "label": "Pickup Oral Care & Soaps"
+      },
+      {
+        "id": 47,
+        "x": 250.0,
+        "y": 120.0,
+        "label": "Personal Care Center Hub"
+      },
+      {
+        "id": 48,
+        "x": 295.0,
+        "y": 120.0,
+        "label": "Pickup Hair & Skin Care"
+      },
+      {
+        "id": 49,
+        "x": 365.0,
+        "y": 120.0,
+        "label": "Household Central Entry"
+      },
+      {
+        "id": 50,
+        "x": 485.0,
+        "y": 120.0,
+        "label": "Pickup Laundry & Detergents"
+      },
+      {
+        "id": 51,
+        "x": 505.0,
+        "y": 120.0,
+        "label": "Household East Hub"
+      },
+      {
+        "id": 52,
+        "x": 615.0,
+        "y": 120.0,
+        "label": "Pickup Cleaners & Paper Goods"
+      },
+      {
+        "id": 53,
+        "x": 650.0,
+        "y": 120.0,
+        "label": "Household East Exit"
+      }
+    ],
+    "edges": [
+      {
+        "id": 1,
+        "from_node_id": 1,
+        "to_node_id": 3,
+        "weight": 40.0
+      },
+      {
+        "id": 2,
+        "from_node_id": 2,
+        "to_node_id": 9,
+        "weight": 40.0
+      },
+      {
+        "id": 3,
+        "from_node_id": 3,
+        "to_node_id": 4,
+        "weight": 45.0
+      },
+      {
+        "id": 4,
+        "from_node_id": 4,
+        "to_node_id": 5,
+        "weight": 105.0
+      },
+      {
+        "id": 5,
+        "from_node_id": 5,
+        "to_node_id": 6,
+        "weight": 115.0
+      },
+      {
+        "id": 6,
+        "from_node_id": 6,
+        "to_node_id": 7,
+        "weight": 140.0
+      },
+      {
+        "id": 7,
+        "from_node_id": 7,
+        "to_node_id": 8,
+        "weight": 110.0
+      },
+      {
+        "id": 8,
+        "from_node_id": 8,
+        "to_node_id": 9,
+        "weight": 35.0
+      },
+      {
+        "id": 9,
+        "from_node_id": 3,
+        "to_node_id": 10,
+        "weight": 50.0
+      },
+      {
+        "id": 10,
+        "from_node_id": 4,
+        "to_node_id": 11,
+        "weight": 50.0
+      },
+      {
+        "id": 11,
+        "from_node_id": 5,
+        "to_node_id": 12,
+        "weight": 50.0
+      },
+      {
+        "id": 12,
+        "from_node_id": 6,
+        "to_node_id": 13,
+        "weight": 50.0
+      },
+      {
+        "id": 13,
+        "from_node_id": 7,
+        "to_node_id": 14,
+        "weight": 5.0
+      },
+      {
+        "id": 14,
+        "from_node_id": 8,
+        "to_node_id": 15,
+        "weight": 50.0
+      },
+      {
+        "id": 15,
+        "from_node_id": 9,
+        "to_node_id": 16,
+        "weight": 50.0
+      },
+      {
+        "id": 16,
+        "from_node_id": 10,
+        "to_node_id": 11,
+        "weight": 45.0
+      },
+      {
+        "id": 17,
+        "from_node_id": 11,
+        "to_node_id": 12,
+        "weight": 105.0
+      },
+      {
+        "id": 18,
+        "from_node_id": 12,
+        "to_node_id": 13,
+        "weight": 115.0
+      },
+      {
+        "id": 19,
+        "from_node_id": 13,
+        "to_node_id": 14,
+        "weight": 147.05
+      },
+      {
+        "id": 20,
+        "from_node_id": 14,
+        "to_node_id": 15,
+        "weight": 118.85
+      },
+      {
+        "id": 21,
+        "from_node_id": 15,
+        "to_node_id": 16,
+        "weight": 35.0
+      },
+      {
+        "id": 22,
+        "from_node_id": 10,
+        "to_node_id": 17,
+        "weight": 63.0
+      },
+      {
+        "id": 23,
+        "from_node_id": 17,
+        "to_node_id": 24,
+        "weight": 85.0
+      },
+      {
+        "id": 24,
+        "from_node_id": 24,
+        "to_node_id": 31,
+        "weight": 85.0
+      },
+      {
+        "id": 25,
+        "from_node_id": 31,
+        "to_node_id": 38,
+        "weight": 57.0
+      },
+      {
+        "id": 26,
+        "from_node_id": 11,
+        "to_node_id": 18,
+        "weight": 63.0
+      },
+      {
+        "id": 27,
+        "from_node_id": 18,
+        "to_node_id": 25,
+        "weight": 85.0
+      },
+      {
+        "id": 28,
+        "from_node_id": 25,
+        "to_node_id": 32,
+        "weight": 85.0
+      },
+      {
+        "id": 29,
+        "from_node_id": 32,
+        "to_node_id": 39,
+        "weight": 57.0
+      },
+      {
+        "id": 30,
+        "from_node_id": 12,
+        "to_node_id": 19,
+        "weight": 63.0
+      },
+      {
+        "id": 31,
+        "from_node_id": 19,
+        "to_node_id": 26,
+        "weight": 85.0
+      },
+      {
+        "id": 32,
+        "from_node_id": 26,
+        "to_node_id": 33,
+        "weight": 85.0
+      },
+      {
+        "id": 33,
+        "from_node_id": 33,
+        "to_node_id": 40,
+        "weight": 57.0
+      },
+      {
+        "id": 34,
+        "from_node_id": 13,
+        "to_node_id": 20,
+        "weight": 63.0
+      },
+      {
+        "id": 35,
+        "from_node_id": 20,
+        "to_node_id": 27,
+        "weight": 85.0
+      },
+      {
+        "id": 36,
+        "from_node_id": 27,
+        "to_node_id": 34,
+        "weight": 85.0
+      },
+      {
+        "id": 37,
+        "from_node_id": 34,
+        "to_node_id": 41,
+        "weight": 57.0
+      },
+      {
+        "id": 38,
+        "from_node_id": 14,
+        "to_node_id": 21,
+        "weight": 108.0
+      },
+      {
+        "id": 39,
+        "from_node_id": 21,
+        "to_node_id": 28,
+        "weight": 85.0
+      },
+      {
+        "id": 40,
+        "from_node_id": 28,
+        "to_node_id": 35,
+        "weight": 85.0
+      },
+      {
+        "id": 41,
+        "from_node_id": 35,
+        "to_node_id": 42,
+        "weight": 57.0
+      },
+      {
+        "id": 42,
+        "from_node_id": 15,
+        "to_node_id": 22,
+        "weight": 63.0
+      },
+      {
+        "id": 43,
+        "from_node_id": 22,
+        "to_node_id": 29,
+        "weight": 85.0
+      },
+      {
+        "id": 44,
+        "from_node_id": 29,
+        "to_node_id": 36,
+        "weight": 85.0
+      },
+      {
+        "id": 45,
+        "from_node_id": 36,
+        "to_node_id": 43,
+        "weight": 57.0
+      },
+      {
+        "id": 46,
+        "from_node_id": 16,
+        "to_node_id": 23,
+        "weight": 63.0
+      },
+      {
+        "id": 47,
+        "from_node_id": 23,
+        "to_node_id": 30,
+        "weight": 85.0
+      },
+      {
+        "id": 48,
+        "from_node_id": 30,
+        "to_node_id": 37,
+        "weight": 85.0
+      },
+      {
+        "id": 49,
+        "from_node_id": 37,
+        "to_node_id": 44,
+        "weight": 57.0
+      },
+      {
+        "id": 50,
+        "from_node_id": 38,
+        "to_node_id": 39,
+        "weight": 45.0
+      },
+      {
+        "id": 51,
+        "from_node_id": 39,
+        "to_node_id": 40,
+        "weight": 105.0
+      },
+      {
+        "id": 52,
+        "from_node_id": 40,
+        "to_node_id": 41,
+        "weight": 115.0
+      },
+      {
+        "id": 53,
+        "from_node_id": 41,
+        "to_node_id": 42,
+        "weight": 140.0
+      },
+      {
+        "id": 54,
+        "from_node_id": 42,
+        "to_node_id": 43,
+        "weight": 110.0
+      },
+      {
+        "id": 55,
+        "from_node_id": 43,
+        "to_node_id": 44,
+        "weight": 35.0
+      },
+      {
+        "id": 56,
+        "from_node_id": 38,
+        "to_node_id": 45,
+        "weight": 50.0
+      },
+      {
+        "id": 57,
+        "from_node_id": 39,
+        "to_node_id": 46,
+        "weight": 53.85
+      },
+      {
+        "id": 58,
+        "from_node_id": 40,
+        "to_node_id": 47,
+        "weight": 50.0
+      },
+      {
+        "id": 59,
+        "from_node_id": 41,
+        "to_node_id": 49,
+        "weight": 50.0
+      },
+      {
+        "id": 60,
+        "from_node_id": 42,
+        "to_node_id": 51,
+        "weight": 50.0
+      },
+      {
+        "id": 61,
+        "from_node_id": 43,
+        "to_node_id": 52,
+        "weight": 50.0
+      },
+      {
+        "id": 62,
+        "from_node_id": 44,
+        "to_node_id": 53,
+        "weight": 50.0
+      },
+      {
+        "id": 63,
+        "from_node_id": 45,
+        "to_node_id": 46,
+        "weight": 65.0
+      },
+      {
+        "id": 64,
+        "from_node_id": 46,
+        "to_node_id": 47,
+        "weight": 85.0
+      },
+      {
+        "id": 65,
+        "from_node_id": 47,
+        "to_node_id": 48,
+        "weight": 45.0
+      },
+      {
+        "id": 66,
+        "from_node_id": 48,
+        "to_node_id": 49,
+        "weight": 70.0
+      },
+      {
+        "id": 67,
+        "from_node_id": 49,
+        "to_node_id": 50,
+        "weight": 120.0
+      },
+      {
+        "id": 68,
+        "from_node_id": 50,
+        "to_node_id": 51,
+        "weight": 20.0
+      },
+      {
+        "id": 69,
+        "from_node_id": 51,
+        "to_node_id": 52,
+        "weight": 110.0
+      },
+      {
+        "id": 70,
+        "from_node_id": 52,
+        "to_node_id": 53,
+        "weight": 35.0
+      }
+    ]
+  }
+}
