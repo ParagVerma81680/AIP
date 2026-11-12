@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  --brand-green: #22C55E;
+  --brand-amber: #F59E0B;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background: #f9fafb; }
