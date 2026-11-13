@@ -96,6 +96,14 @@ api.interceptors.response.use(
             ]
           };
           reply = "I've calculated the shortest in-store route between product shelves for your items! Total walking distance is just 65 meters. Click **'View Optimized Route on Map'** to open the interactive floorplan.";
+        } else if (userMsg.includes('can do') || userMsg.includes('help') || userMsg.includes('what else') || userMsg.includes('features') || userMsg.includes('capabilities') || userMsg.includes('who are you')) {
+          reply = `🤖 **Hello! I'm AIP — your intelligent AI Shopper & Assistant.**\n\nHere is everything I can do for you:\n\n` +
+                  `1. 🛒 **Smart Grocery Bundles:** Tell me *"Dinner for 4 under ₹400"* or *"High-protein breakfast"* and I will bundle ingredients with real prices and let you add them in 1-click.\n` +
+                  `2. 📍 **Store Shelf & Aisle Finder:** Ask *"Where is the Amul butter?"* or *"Where can I find olive oil?"* and I will tell you the exact section, aisle, and shelf.\n` +
+                  `3. 🗺️ **AI Smart Route Optimization:** Say *"Plan route for my cart"* and I'll calculate the shortest walkable path through the supermarket avoiding blocked aisles.\n` +
+                  `4. 💰 **Budget Guard:** Ask *"Keep everything under ₹300"* and I will optimize items to stay strictly under budget.\n` +
+                  `5. 🥗 **Dietary & Nutrition Advice:** Tell me if you are vegetarian, vegan, or lactose-intolerant, and I will remember your preference.\n` +
+                  `6. 🧮 **Calculations & General Knowledge:** Ask any math question, recipe tips, or cooking advice!`;
         } else if (userMsg.includes('snack') || userMsg.includes('kids')) {
           matched = allProducts.filter(p => p.category_id === 3 || p.name.toLowerCase().includes('biscuit') || p.name.toLowerCase().includes('chip')).slice(0, 3);
           reply = "Here are healthy, popular snacks for kids and tea-time crunching!";
