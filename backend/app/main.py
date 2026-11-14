@@ -57,6 +57,10 @@ app.include_router(admin.router, prefix="/api/admin", tags=["admin"])
 app.include_router(memory.router, prefix="/api/memory", tags=["memory"])
 app.include_router(documents.router, prefix="/api/documents", tags=["documents"])
 
+@app.get("/")
+@app.get("/api")
+@app.get("/api/index.py")
+@app.get("/health")
 @app.get("/api/health")
 async def health():
     return {
@@ -65,4 +69,5 @@ async def health():
         "version": "2.0.0",
         "ai_provider": settings.AI_PROVIDER,
         "ai_model": settings.AI_MODEL,
+        "docs": "/api/docs",
     }
