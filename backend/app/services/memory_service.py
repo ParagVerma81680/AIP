@@ -1,3 +1,4 @@
+import json
 import logging
 from typing import List, Dict, Any, Optional
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -21,61 +22,105 @@ class MemoryService:
         return pref
 
     @staticmethod
-    async def extract_and_save_memories(db: AsyncSession, user_id: int, user_message: str, assistant_reply: str):
+    async def extract_and_save_memories_llm(
+        db: AsyncSession,
+        user_id: int,
+        user_message: str,
+        assistant_reply: str
+    ):
         """
-        Extracts persistent user preferences or dietary facts selectively.
-        Doesn't save arbitrary small-talk.
+        Uses intelligent LLM evaluation to selectively extract durable facts about the user:
+        - Dietary constraints (vegan, halal, kosher, gluten-free, vegetarian, diabetic)
+        - Allergies (peanuts, shellfish, lactose, sulfites)
+        - Household details (cooking for family of 4, has a toddler, pet owner)
+        - Budget preferences (student budget, organic preference)
+        - Recurring goals & habits
+        Does NOT save transient chatter, one-off searches, or greetings.
         """
         pref = await MemoryService.get_user_preferences(db, user_id)
         if not pref.memory_enabled:
             return
 
-        text = user_message.lower()
-        extracted_facts = []
+        # Skip trivial messages to conserve tokens
+        lower = user_message.lower().strip()
+        if len(lower.split()) < 3 or lower in ["hi", "hello", "thanks", "thank you", "bye", "ok", "okay"]:
+            return
 
-        # Selective rule-based fact detection
-        if any(w in text for w in ["i am vegetarian", "i'm vegetarian", "pure veg", "strict veg"]):
-            extracted_facts.append(("diet", "User follows a strict vegetarian diet."))
-        elif any(w in text for w in ["i am vegan", "i'm vegan"]):
-            extracted_facts.append(("diet", "User follows a vegan diet."))
-        elif any(w in text for w in ["allergic to nuts", "nut allergy"]):
-            extracted_facts.append(("allergy", "User has a severe allergy to nuts/peanuts."))
-        elif any(w in text for w in ["lactose intolerant", "avoid dairy", "no milk"]):
-            extracted_facts.append(("diet", "User is lactose intolerant and avoids dairy."))
-        elif any(w in text for w in ["budget under", "keep it under"]):
-            extracted_facts.append(("budget", f"User stated budget constraint: '{user_message}'."))
-        elif any(w in text for w in ["prefer organic", "only organic"]):
-            extracted_facts.append(("preference", "User strongly prefers organic and chemical-free products."))
+        extraction_prompt = (
+            "You are a precise, privacy-conscious personal memory extractor for an AI assistant.\n"
+            "Analyze the following user statement and assistant reply:\n"
+            f"User: {user_message}\n"
+            f"Assistant: {assistant_reply}\n\n"
+            "Task: Identify any permanent, high-value personal facts about the user "
+            "(e.g., diet, allergies, family size, budget rules, brand loyalties, recurring projects).\n"
+            "Rules:\n"
+            "1. Output ONLY a JSON array of objects: [{\"category\": \"diet|allergy|budget|preference|fact\", \"fact\": \"concise statement\", \"importance\": 1.0-2.0}]\n"
+            "2. If there are NO durable facts to remember, output an empty JSON array: []\n"
+            "3. Do not save temporary queries or questions. Only save confirmed facts about the user."
+        )
 
-        for category, fact in extracted_facts:
-            # Check if duplicate exists
-            existing = await db.execute(
-                select(Memory).where(
-                    and_(Memory.user_id == user_id, Memory.fact_text == fact, Memory.is_active == True)
-                )
-            )
-            if existing.scalar_one_or_none():
-                continue
-
+        try:
             provider = AIProviderFactory.get_provider()
-            embedding = await provider.generate_embedding(fact)
-            memory = Memory(
-                user_id=user_id,
-                category=category,
-                fact_text=fact,
-                embedding=embedding,
-                importance=1.5 if category in ["allergy", "diet"] else 1.0,
+            res = await provider.generate_response(
+                messages=[{"role": "user", "content": extraction_prompt}],
+                temperature=0.2,
+                max_tokens=250,
             )
-            db.add(memory)
+            raw = (res.get("content") or "").strip()
+            # Clean markdown code blocks if present
+            if "```json" in raw:
+                raw = raw.split("```json")[1].split("```")[0].strip()
+            elif "```" in raw:
+                raw = raw.split("```")[1].split("```")[0].strip()
 
-        if extracted_facts:
+            facts = json.loads(raw)
+            if not isinstance(facts, list):
+                return
+
+            for item in facts:
+                fact_text = item.get("fact", "").strip()
+                category = item.get("category", "preference").strip()
+                importance = float(item.get("importance", 1.0))
+
+                if not fact_text:
+                    continue
+
+                # Check for duplicates or near-identical memories
+                existing = await db.execute(
+                    select(Memory).where(
+                        and_(Memory.user_id == user_id, Memory.fact_text == fact_text, Memory.is_active == True)
+                    )
+                )
+                if existing.scalar_one_or_none():
+                    continue
+
+                embedding = await provider.generate_embedding(fact_text)
+                memory = Memory(
+                    user_id=user_id,
+                    category=category,
+                    fact_text=fact_text,
+                    embedding=embedding,
+                    importance=importance,
+                )
+                db.add(memory)
+
             await db.commit()
-            logger.info(f"Extracted {len(extracted_facts)} memories for user {user_id}")
+            if facts:
+                logger.info(f"Dynamically extracted {len(facts)} memory facts for user {user_id}")
+
+        except Exception as e:
+            logger.warning(f"Memory extraction skipped: {e}")
 
     @staticmethod
-    async def retrieve_relevant_memories(db: AsyncSession, user_id: int, query: str, top_k: int = 3) -> List[str]:
+    async def retrieve_relevant_memories(
+        db: AsyncSession,
+        user_id: int,
+        query: str,
+        top_k: int = 4
+    ) -> List[str]:
         """
-        Retrieves top-K semantically relevant user memories using cosine similarity.
+        Retrieves top-K semantically relevant user memories using hybrid scoring:
+        Score = (Cosine Similarity * 0.7) + (Normalized Importance * 0.3)
         """
         pref = await MemoryService.get_user_preferences(db, user_id)
         if not pref.memory_enabled:
@@ -93,13 +138,14 @@ class MemoryService:
         for mem in memories:
             if not mem.embedding:
                 continue
-            sim = cosine_similarity(query_vec, mem.embedding)
-            # Boost higher importance facts (allergies, diets)
-            sim = sim * mem.importance
-            scored.append((sim, mem.fact_text))
+            cos_sim = cosine_similarity(query_vec, mem.embedding)
+            # Factor in importance weight
+            weight = mem.importance or 1.0
+            hybrid_score = (cos_sim * 0.7) + (min(weight / 2.0, 1.0) * 0.3)
+            scored.append((hybrid_score, mem.fact_text))
 
         scored.sort(key=lambda x: x[0], reverse=True)
-        return [text for sim, text in scored[:top_k] if sim > 0.05]
+        return [text for score, text in scored[:top_k] if score > 0.08]
 
     @staticmethod
     async def clear_user_memories(db: AsyncSession, user_id: int):

@@ -15,14 +15,18 @@ class DocumentService:
     def extract_text(file_bytes: bytes, filename: str) -> str:
         ext = filename.split(".")[-1].lower() if "." in filename else "txt"
         
-        if ext == "txt":
+        if ext == "txt" or ext == "md":
             return file_bytes.decode("utf-8", errors="ignore")
         
         elif ext == "pdf":
             from pypdf import PdfReader
             reader = PdfReader(io.BytesIO(file_bytes))
-            text_parts = [page.extract_text() or "" for page in reader.pages]
-            return "\n\n".join(text_parts)
+            parts = []
+            for page_idx, page in enumerate(reader.pages, start=1):
+                page_text = page.extract_text() or ""
+                if page_text.strip():
+                    parts.append(f"[Page {page_idx}]\n{page_text.strip()}")
+            return "\n\n".join(parts)
             
         elif ext in ["docx", "doc"]:
             import docx
@@ -33,7 +37,8 @@ class DocumentService:
             return file_bytes.decode("utf-8", errors="ignore")
 
     @staticmethod
-    def chunk_text(text: str, chunk_size: int = 400, overlap: int = 80) -> List[str]:
+    def chunk_text(text: str, chunk_size: int = 350, overlap: int = 70) -> List[str]:
+        """Sliding-window overlapping chunker to preserve semantic context across chunk boundaries."""
         words = text.split()
         if not words:
             return []
@@ -85,30 +90,36 @@ class DocumentService:
         return doc
 
     @staticmethod
-    async def query_knowledge_base(db: AsyncSession, user_id: int, query: str, top_k: int = 3) -> List[str]:
+    async def query_knowledge_base(
+        db: AsyncSession,
+        user_id: int,
+        query: str,
+        top_k: int = 3
+    ) -> List[str]:
         """
-        Retrieves top-K relevant chunks across user's uploaded documents.
+        Retrieves top-K relevant chunks across user's uploaded documents with source citations.
+        Strict tenant isolation enforced: user A can NEVER retrieve user B's documents.
         """
-        # Get chunks owned by user
         stmt = (
-            select(DocumentChunk)
-            .join(Document)
+            select(DocumentChunk, Document.title)
+            .join(Document, DocumentChunk.document_id == Document.id)
             .where(Document.user_id == user_id)
         )
         result = await db.execute(stmt)
-        chunks = result.scalars().all()
-        if not chunks:
+        rows = result.all()
+        if not rows:
             return []
 
         provider = AIProviderFactory.get_provider()
         query_vec = await provider.generate_embedding(query)
 
         scored = []
-        for ch in chunks:
-            if not ch.embedding:
+        for chunk, doc_title in rows:
+            if not chunk.embedding:
                 continue
-            sim = cosine_similarity(query_vec, ch.embedding)
-            scored.append((sim, ch.content))
+            sim = cosine_similarity(query_vec, chunk.embedding)
+            citation = f"Source: '{doc_title}' (Chunk {chunk.chunk_index + 1})\nExcerpt: \"{chunk.content}\""
+            scored.append((sim, citation))
 
         scored.sort(key=lambda x: x[0], reverse=True)
-        return [content for sim, content in scored[:top_k] if sim > 0.08]
+        return [citation for sim, citation in scored[:top_k] if sim > 0.08]
