@@ -1,23 +1,8 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
+import sys
+from pathlib import Path
 
-app = FastAPI(title="AIP & SwiftMart API")
+root_dir = Path(__file__).resolve().parent.parent
+if str(root_dir) not in sys.path:
+    sys.path.insert(0, str(root_dir))
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-@app.get("/")
-@app.get("/api")
-@app.get("/api/health")
-def health():
-    return {
-        "status": "ok",
-        "service": "AIP Backend",
-        "version": "2.0.0",
-        "message": "SwiftMart AIP Backend is LIVE on Vercel!"
-    }
+from app.main import app
