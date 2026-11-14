@@ -14,12 +14,13 @@ import { CheckoutPage } from './pages/CheckoutPage';
 import { OrdersPage } from './pages/OrdersPage';
 import { RoutePlannerPage } from './pages/RoutePlannerPage';
 import { AdminPage } from './pages/AdminPage';
+import { LoginPage } from './pages/LoginPage';
 
 import { useAuthStore } from './store/useAuthStore';
 import { useCartStore } from './store/useCartStore';
 
 export function App() {
-  const { fetchMe } = useAuthStore();
+  const { token, isGuest, fetchMe } = useAuthStore();
   const { fetchCart } = useCartStore();
 
   useEffect(() => {
@@ -27,46 +28,52 @@ export function App() {
     fetchCart();
   }, []);
 
+  const isAuthenticated = Boolean(token || isGuest);
+
   return (
     <HashRouter>
-      <div className="min-h-screen flex flex-col bg-gray-50 text-neutral-900 selection:bg-emerald-500 selection:text-white">
-        <Toaster
-          position="top-center"
-          toastOptions={{
-            style: {
-              borderRadius: '16px',
-              background: '#18181b',
-              color: '#ffffff',
-              fontSize: '13px',
-              fontWeight: 500,
-            },
-          }}
-        />
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          style: {
+            borderRadius: '16px',
+            background: '#18181b',
+            color: '#ffffff',
+            fontSize: '13px',
+            fontWeight: 500,
+          },
+        }}
+      />
 
-        {/* Global Navigation */}
-        <Navbar />
+      {!isAuthenticated ? (
+        <LoginPage />
+      ) : (
+        <div className="min-h-screen flex flex-col bg-gray-50 text-neutral-900 selection:bg-emerald-500 selection:text-white">
+          {/* Global Navigation */}
+          <Navbar />
 
-        {/* Dynamic Page Views */}
-        <div className="flex-1">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/catalog" element={<CatalogPage />} />
-            <Route path="/checkout" element={<CheckoutPage />} />
-            <Route path="/orders" element={<OrdersPage />} />
-            <Route path="/route-planner" element={<RoutePlannerPage />} />
-            <Route path="/admin" element={<AdminPage />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
+          {/* Dynamic Page Views */}
+          <div className="flex-1">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/catalog" element={<CatalogPage />} />
+              <Route path="/checkout" element={<CheckoutPage />} />
+              <Route path="/orders" element={<OrdersPage />} />
+              <Route path="/route-planner" element={<RoutePlannerPage />} />
+              <Route path="/admin" element={<AdminPage />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </div>
+
+          {/* Global Footer */}
+          <Footer />
+
+          {/* Global Modals & Slide-overs */}
+          <CartDrawer />
+          <AuthModal />
+          <AIChatDrawer />
         </div>
-
-        {/* Global Footer */}
-        <Footer />
-
-        {/* Global Modals & Slide-overs */}
-        <CartDrawer />
-        <AuthModal />
-        <AIChatDrawer />
-      </div>
+      )}
     </HashRouter>
   );
 }

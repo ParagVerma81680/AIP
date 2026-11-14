@@ -5,6 +5,7 @@ import type { User, Address } from '../types';
 interface AuthState {
   user: User | null;
   token: string | null;
+  isGuest: boolean;
   isLoading: boolean;
   isAuthModalOpen: boolean;
   authModalTab: 'login' | 'register';
@@ -12,6 +13,7 @@ interface AuthState {
 
   openAuthModal: (tab?: 'login' | 'register') => void;
   closeAuthModal: () => void;
+  setGuest: (val: boolean) => void;
   login: (email: string, password: string) => Promise<void>;
   register: (email: string, password: string, fullName?: string, phone?: string) => Promise<void>;
   logout: () => void;
@@ -23,6 +25,7 @@ interface AuthState {
 export const useAuthStore = create<AuthState>((set, get) => ({
   user: null,
   token: localStorage.getItem('swiftmart_token'),
+  isGuest: localStorage.getItem('swiftmart_guest') === 'true',
   isLoading: false,
   isAuthModalOpen: false,
   authModalTab: 'login',
@@ -36,13 +39,23 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     set({ isAuthModalOpen: false });
   },
 
+  setGuest: (val: boolean) => {
+    if (val) {
+      localStorage.setItem('swiftmart_guest', 'true');
+    } else {
+      localStorage.removeItem('swiftmart_guest');
+    }
+    set({ isGuest: val });
+  },
+
   login: async (email, password) => {
     set({ isLoading: true });
     try {
       const res = await api.post('/auth/login', { email, password });
       const { access_token, user } = res.data;
       localStorage.setItem('swiftmart_token', access_token);
-      set({ token: access_token, user, isAuthModalOpen: false, isLoading: false });
+      localStorage.removeItem('swiftmart_guest');
+      set({ token: access_token, user, isGuest: false, isAuthModalOpen: false, isLoading: false });
       await get().fetchAddresses();
     } catch (err) {
       set({ isLoading: false });
@@ -61,7 +74,8 @@ export const useAuthStore = create<AuthState>((set, get) => ({
       });
       const { access_token, user } = res.data;
       localStorage.setItem('swiftmart_token', access_token);
-      set({ token: access_token, user, isAuthModalOpen: false, isLoading: false });
+      localStorage.removeItem('swiftmart_guest');
+      set({ token: access_token, user, isGuest: false, isAuthModalOpen: false, isLoading: false });
       await get().fetchAddresses();
     } catch (err) {
       set({ isLoading: false });
@@ -71,7 +85,8 @@ export const useAuthStore = create<AuthState>((set, get) => ({
 
   logout: () => {
     localStorage.removeItem('swiftmart_token');
-    set({ token: null, user: null, addresses: [] });
+    localStorage.removeItem('swiftmart_guest');
+    set({ token: null, user: null, isGuest: false, addresses: [] });
   },
 
   fetchMe: async () => {
