@@ -1,21 +1,23 @@
-import sys
-import os
-from pathlib import Path
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
-root_dir = Path(__file__).resolve().parent.parent
-if str(root_dir) not in sys.path:
-    sys.path.insert(0, str(root_dir))
+app = FastAPI(title="AIP & SwiftMart API")
 
-try:
-    from app.main import app
-except Exception as e:
-    import traceback
-    tb = traceback.format_exc()
-    from fastapi import FastAPI
-    from fastapi.responses import JSONResponse
-    
-    app = FastAPI(title="Diagnostic")
-    
-    @app.api_route("/{path:path}", methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "PATCH"])
-    async def catch_all(path: str):
-        return JSONResponse(status_code=200, content={"error": str(e), "traceback": tb})
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/")
+@app.get("/api")
+@app.get("/api/health")
+def health():
+    return {
+        "status": "ok",
+        "service": "AIP Backend",
+        "version": "2.0.0",
+        "message": "SwiftMart AIP Backend is LIVE on Vercel!"
+    }
