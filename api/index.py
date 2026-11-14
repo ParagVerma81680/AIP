@@ -2,19 +2,33 @@ import sys
 import os
 from pathlib import Path
 
-# Add backend directory to sys.path so 'app' imports work seamlessly
-root_dir = Path(__file__).resolve().parent.parent
-backend_dir = root_dir / "backend"
-if str(backend_dir) not in sys.path:
-    sys.path.insert(0, str(backend_dir))
-if str(root_dir) not in sys.path:
-    sys.path.insert(0, str(root_dir))
+api_dir = Path(__file__).resolve().parent
+backend_dir = api_dir.parent / "backend"
 
-# Configure Vercel runtime environment
+for d in [str(api_dir), str(backend_dir), str(api_dir.parent)]:
+    if d not in sys.path:
+        sys.path.insert(0, d)
+
+# Set database for Vercel
 if os.environ.get("VERCEL"):
-    os.environ.setdefault("DATABASE_URL", "sqlite+aiosqlite:////tmp/swiftmart.db")
+    os.environ["DATABASE_URL"] = "sqlite+aiosqlite:////tmp/swiftmart.db"
 
-from app.main import app
+try:
+    from app.main import app
+except Exception as e:
+    import traceback
+    from fastapi import FastAPI
+    err_str = str(e)
+    tb_str = traceback.format_exc()
+    app = FastAPI(title="AIP Error Diagnostic")
+    
+    @app.get("/{full_path:path}")
+    def error_handler(full_path: str):
+        return {
+            "status": "error",
+            "message": "Failed to initialize backend on Vercel",
+            "error": err_str,
+            "traceback": tb_str.splitlines()
+        }
 
-# Vercel looks for the ASGI/WSGI app instance
 handler = app
