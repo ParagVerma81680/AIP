@@ -1,0 +1,73 @@
+from contextlib import asynccontextmanager
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from app.core.config import settings
+from app.core.database import engine, Base
+import app.models  # load all models into Base.metadata
+from app.api import auth, products, categories, cart, orders, store, route, ai, admin, memory, documents
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Ensure all tables exist on startup
+    try:
+        async with engine.begin() as conn:
+            await conn.run_sync(Base.metadata.create_all)
+        
+        # If running on fresh environment (e.g. Vercel /tmp or new instance), auto-seed catalog
+        from app.core.database import AsyncSessionLocal
+        from app.models.product import Product
+        from sqlalchemy import select, func
+        async with AsyncSessionLocal() as db:
+            res = await db.execute(select(func.count(Product.id)))
+            count = res.scalar() or 0
+            if count == 0:
+                print("Fresh database detected. Auto-seeding SwiftMart catalog and demo users...")
+                from app.seed.seed_data import seed_all
+                await seed_all()
+    except Exception as e:
+        print(f"Warning during DB table creation/seed: {e}")
+    yield
+
+app = FastAPI(
+    title="AIP & SwiftMart API", 
+    version="2.0.0", 
+    docs_url="/api/docs", 
+    redoc_url="/api/redoc",
+    lifespan=lifespan,
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.CORS_ORIGINS,
+    allow_origin_regex=r"https://.*\.vercel\.app",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(auth.router, prefix="/api/auth", tags=["auth"])
+app.include_router(products.router, prefix="/api/products", tags=["products"])
+app.include_router(categories.router, prefix="/api/categories", tags=["categories"])
+app.include_router(cart.router, prefix="/api/cart", tags=["cart"])
+app.include_router(orders.router, prefix="/api/orders", tags=["orders"])
+app.include_router(store.router, prefix="/api/store", tags=["store"])
+app.include_router(route.router, prefix="/api/route", tags=["route"])
+app.include_router(ai.router, prefix="/api/ai", tags=["ai"])
+app.include_router(admin.router, prefix="/api/admin", tags=["admin"])
+app.include_router(memory.router, prefix="/api/memory", tags=["memory"])
+app.include_router(documents.router, prefix="/api/documents", tags=["documents"])
+
+@app.get("/")
+@app.get("/api")
+@app.get("/api/index.py")
+@app.get("/health")
+@app.get("/api/health")
+async def health():
+    return {
+        "status": "ok",
+        "service": "AIP Backend",
+        "version": "2.0.0",
+        "ai_provider": settings.AI_PROVIDER,
+        "ai_model": settings.AI_MODEL,
+        "docs": "/api/docs",
+    }
