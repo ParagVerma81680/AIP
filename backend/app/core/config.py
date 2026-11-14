@@ -1,9 +1,10 @@
+import os
 from pydantic_settings import BaseSettings
 from typing import List, Optional
 from pathlib import Path
 
 _BACKEND_DIR = Path(__file__).resolve().parent.parent.parent
-_DEFAULT_DB_PATH = (_BACKEND_DIR / "swiftmart.db").as_posix()
+_DEFAULT_DB_PATH = "/tmp/swiftmart.db" if os.environ.get("VERCEL") else (_BACKEND_DIR / "swiftmart.db").as_posix()
 
 class Settings(BaseSettings):
     DATABASE_URL: str = f"sqlite+aiosqlite:///{_DEFAULT_DB_PATH}"

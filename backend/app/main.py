@@ -12,8 +12,20 @@ async def lifespan(app: FastAPI):
     try:
         async with engine.begin() as conn:
             await conn.run_sync(Base.metadata.create_all)
+        
+        # If running on fresh environment (e.g. Vercel /tmp or new instance), auto-seed catalog
+        from app.core.database import AsyncSessionLocal
+        from app.models.product import Product
+        from sqlalchemy import select, func
+        async with AsyncSessionLocal() as db:
+            res = await db.execute(select(func.count(Product.id)))
+            count = res.scalar() or 0
+            if count == 0:
+                print("Fresh database detected. Auto-seeding SwiftMart catalog and demo users...")
+                from app.seed.seed_data import seed_all
+                await seed_all()
     except Exception as e:
-        print(f"Warning during DB table creation: {e}")
+        print(f"Warning during DB table creation/seed: {e}")
     yield
 
 app = FastAPI(
@@ -27,6 +39,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.CORS_ORIGINS,
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
