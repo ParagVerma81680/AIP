@@ -1,9 +1,28 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
+from app.core.database import engine, Base
+import app.models  # load all models into Base.metadata
 from app.api import auth, products, categories, cart, orders, store, route, ai, admin, memory, documents
 
-app = FastAPI(title="AIP & SwiftMart API", version="2.0.0", docs_url="/api/docs", redoc_url="/api/redoc")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Ensure all tables exist on startup
+    try:
+        async with engine.begin() as conn:
+            await conn.run_sync(Base.metadata.create_all)
+    except Exception as e:
+        print(f"Warning during DB table creation: {e}")
+    yield
+
+app = FastAPI(
+    title="AIP & SwiftMart API", 
+    version="2.0.0", 
+    docs_url="/api/docs", 
+    redoc_url="/api/redoc",
+    lifespan=lifespan,
+)
 
 app.add_middleware(
     CORSMiddleware,
