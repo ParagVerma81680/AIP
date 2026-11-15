@@ -54,8 +54,8 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-black text-sm">
-                ⚡
+              <div className="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center">
+                <Zap className="w-4 h-4 text-white fill-white" />
               </div>
               <span className="text-lg font-black tracking-tight text-neutral-900">
                 Swift<span className="text-emerald-600">Mart</span>

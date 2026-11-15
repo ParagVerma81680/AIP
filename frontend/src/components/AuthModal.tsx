@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Lock, Mail, User as UserIcon, Phone, Sparkles } from 'lucide-react';
+import { X, Lock, Mail, User as UserIcon, Phone, Sparkles, Zap } from 'lucide-react';
 import { useAuthStore } from '../store/useAuthStore';
 import toast from 'react-hot-toast';
 
@@ -69,8 +69,8 @@ export const AuthModal: React.FC = () => {
 
         {/* Brand header */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-emerald-600 text-white text-2xl font-black mb-2 shadow-md shadow-emerald-500/20">
-            ⚡
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-emerald-600 text-white mb-2 shadow-md shadow-emerald-500/20">
+            <Zap className="w-6 h-6 text-white fill-white" />
           </div>
           <h2 className="text-2xl font-extrabold text-neutral-900">
             {authModalTab === 'login' ? 'Welcome Back!' : 'Create SwiftMart Account'}

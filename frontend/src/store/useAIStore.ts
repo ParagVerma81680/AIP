@@ -22,13 +22,13 @@ interface AIState {
 const INITIAL_WELCOME: ChatMessageItem = {
   id: 'welcome-1',
   role: 'assistant',
-  content: `👋 **Hi! I'm your SwiftMart AI Shopping Assistant.**\n\nI can help you find products, plan dinner ingredient lists under budget, locate physical shelves in our store, or calculate the shortest aisle walking route!`,
+  content: `**Hi! I'm your SwiftMart AI Shopping Assistant.**\n\nI can help you find products, plan dinner ingredient lists under budget, locate physical shelves in our store, or calculate the shortest aisle walking route!`,
   timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
   quickSuggestions: [
-    '🥗 Dinner ingredients under ₹400',
-    '📍 Where is the Amul butter?',
-    '🗺️ Plan shortest route for my cart',
-    '🍿 Healthy snacks for kids',
+    'Dinner ingredients under ₹400',
+    'Where is the Amul butter?',
+    'Plan shortest route for my cart',
+    'Healthy snacks for kids',
   ],
 };
 
@@ -38,10 +38,10 @@ export const useAIStore = create<AIState>((set, get) => ({
   messages: [INITIAL_WELCOME],
   conversationId: null,
   activeSuggestions: [
-    '🥗 Dinner ingredients under ₹400',
-    '📍 Where is the Amul butter?',
-    '🗺️ Plan shortest route for my cart',
-    '🍿 Healthy snacks for kids',
+    'Dinner ingredients under ₹400',
+    'Where is the Amul butter?',
+    'Plan shortest route for my cart',
+    'Healthy snacks for kids',
   ],
 
   openChat: (initialPrompt?: string) => {

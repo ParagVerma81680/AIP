@@ -37,8 +37,8 @@ export const BannerSection: React.FC = () => {
           </div>
 
           {/* Decorative graphic background */}
-          <div className="absolute right-0 bottom-0 top-0 w-1/3 opacity-20 pointer-events-none flex items-center justify-center">
-            <span className="text-[140px] font-black select-none text-emerald-300">⚡</span>
+          <div className="absolute right-0 bottom-0 top-0 w-1/3 opacity-15 pointer-events-none flex items-center justify-center">
+            <Zap className="w-32 h-32 text-emerald-200 fill-emerald-200" />
           </div>
         </div>
 

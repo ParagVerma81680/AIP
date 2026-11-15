@@ -11,7 +11,8 @@ import {
   Package, 
   Navigation,
   Compass,
-  LayoutDashboard
+  LayoutDashboard,
+  Zap
 } from 'lucide-react';
 import { useAuthStore } from '../store/useAuthStore';
 import { useCartStore } from '../store/useCartStore';
@@ -99,7 +100,7 @@ export const Navbar: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0 group">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-green-500 flex items-center justify-center text-white shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform">
-              <span className="text-2xl font-black">⚡</span>
+              <Zap className="w-5 h-5 text-white fill-white" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-extrabold tracking-tight text-neutral-900 group-hover:text-emerald-600 transition-colors">

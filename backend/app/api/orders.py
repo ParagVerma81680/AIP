@@ -5,6 +5,7 @@ from sqlalchemy.orm import selectinload
 from app.core.database import get_db
 from app.models.order import Order, OrderItem
 from app.models.cart import Cart, CartItem
+from app.models.product import Product
 from app.models.user import User
 from app.schemas.order import OrderOut, OrderCreate
 from app.api.deps import get_current_user
@@ -16,7 +17,11 @@ router = APIRouter()
 async def list_orders(current_user: User = Depends(get_current_user), db: AsyncSession = Depends(get_db)):
     result = await db.execute(
         select(Order).where(Order.user_id == current_user.id)
-        .options(selectinload(Order.items).selectinload(OrderItem.product))
+        .options(
+            selectinload(Order.items)
+            .selectinload(OrderItem.product)
+            .selectinload(Product.category)
+        )
         .order_by(Order.created_at.desc())
     )
     return result.scalars().all()
@@ -58,14 +63,26 @@ async def create_order(data: OrderCreate, current_user: User = Depends(get_curre
 
     await db.execute(CartItem.__table__.delete().where(CartItem.cart_id == cart.id))
     await db.commit()
-    await db.refresh(order)
-    return order
+
+    res_final = await db.execute(
+        select(Order).where(Order.id == order.id)
+        .options(
+            selectinload(Order.items)
+            .selectinload(OrderItem.product)
+            .selectinload(Product.category)
+        )
+    )
+    return res_final.scalar_one()
 
 @router.get("/{order_id}", response_model=OrderOut)
 async def get_order(order_id: int, current_user: User = Depends(get_current_user), db: AsyncSession = Depends(get_db)):
     result = await db.execute(
         select(Order).where(Order.id == order_id, Order.user_id == current_user.id)
-        .options(selectinload(Order.items).selectinload(OrderItem.product))
+        .options(
+            selectinload(Order.items)
+            .selectinload(OrderItem.product)
+            .selectinload(Product.category)
+        )
     )
     order = result.scalar_one_or_none()
     if not order:

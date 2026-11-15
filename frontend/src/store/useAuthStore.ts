@@ -25,7 +25,7 @@ interface AuthState {
 export const useAuthStore = create<AuthState>((set, get) => ({
   user: null,
   token: localStorage.getItem('swiftmart_token'),
-  isGuest: localStorage.getItem('swiftmart_guest') === 'true',
+  isGuest: typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('swiftmart_guest') === 'true' : false,
   isLoading: false,
   isAuthModalOpen: false,
   authModalTab: 'login',
@@ -41,9 +41,9 @@ export const useAuthStore = create<AuthState>((set, get) => ({
 
   setGuest: (val: boolean) => {
     if (val) {
-      localStorage.setItem('swiftmart_guest', 'true');
+      if (typeof sessionStorage !== 'undefined') sessionStorage.setItem('swiftmart_guest', 'true');
     } else {
-      localStorage.removeItem('swiftmart_guest');
+      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('swiftmart_guest');
     }
     set({ isGuest: val });
   },
@@ -55,6 +55,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
       const { access_token, user } = res.data;
       localStorage.setItem('swiftmart_token', access_token);
       localStorage.removeItem('swiftmart_guest');
+      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('swiftmart_guest');
       set({ token: access_token, user, isGuest: false, isAuthModalOpen: false, isLoading: false });
       await get().fetchAddresses();
     } catch (err) {
@@ -75,6 +76,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
       const { access_token, user } = res.data;
       localStorage.setItem('swiftmart_token', access_token);
       localStorage.removeItem('swiftmart_guest');
+      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('swiftmart_guest');
       set({ token: access_token, user, isGuest: false, isAuthModalOpen: false, isLoading: false });
       await get().fetchAddresses();
     } catch (err) {
@@ -86,6 +88,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   logout: () => {
     localStorage.removeItem('swiftmart_token');
     localStorage.removeItem('swiftmart_guest');
+    if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('swiftmart_guest');
     set({ token: null, user: null, isGuest: false, addresses: [] });
   },
 
