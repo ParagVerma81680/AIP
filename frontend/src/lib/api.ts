@@ -8,7 +8,7 @@ const isLocal = typeof window !== 'undefined' && (
 
 export const API_BASE_URL = isLocal 
   ? 'http://localhost:8000/api'
-  : 'https://aip-g7so.vercel.app/api';
+  : 'https://aip-backend-tafl.onrender.com/api';
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
