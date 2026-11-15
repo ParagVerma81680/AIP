@@ -57,14 +57,15 @@ class GroqProvider(BaseAIProvider):
             data = resp.json()
             choice = data["choices"][0]
             msg = choice["message"]
-            content = msg.get("content") or ""
-            if not content.strip() and msg.get("reasoning"):
-                content = msg.get("reasoning")
+            raw_content = msg.get("content") or ""
+            # Strip <think> tags if reasoning model includes thinking block
+            import re
+            cleaned_content = re.sub(r"<think>[\s\S]*?</think>", "", raw_content).strip()
 
             tool_calls = msg.get("tool_calls")
             usage = data.get("usage", {})
             return {
-                "content": content.strip() if content else "",
+                "content": cleaned_content,
                 "tool_calls": tool_calls,
                 "prompt_tokens": usage.get("prompt_tokens", 0),
                 "completion_tokens": usage.get("completion_tokens", 0),

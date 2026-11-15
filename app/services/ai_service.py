@@ -149,6 +149,21 @@ class AIService:
                 # Capture products data for frontend interactive cards
                 if fn_name == "search_grocery_catalog" and "products" in tool_result:
                     executed_products_data.extend(tool_result["products"])
+                elif fn_name == "get_shelf_location" and "location" in tool_result and tool_result["location"]:
+                    loc = tool_result["location"]
+                    executed_products_data.append({
+                        "id": loc.get("product_id"),
+                        "name": loc.get("product_name"),
+                        "brand": loc.get("brand"),
+                        "price": loc.get("price"),
+                        "quantity_label": loc.get("quantity_label"),
+                        "image_url": loc.get("image_url"),
+                        "shelf_name": loc.get("shelf"),
+                        "aisle_name": loc.get("aisle"),
+                        "shelf_x": loc.get("shelf_x"),
+                        "shelf_y": loc.get("shelf_y"),
+                        "is_available": True,
+                    })
                 elif fn_name == "plan_store_route" and "route" in tool_result:
                     r_info = tool_result["route"]
                     if "error" not in r_info:
@@ -177,20 +192,35 @@ class AIService:
                     system_prompt=full_system_prompt,
                     temperature=0.7,
                     max_tokens=600,
-                    tools=available_tools,
+                    tools=AIP_TOOLS_SCHEMA,
                 )
-                reply_content = second_resp.get("content") or reply_content
+                second_text = (second_resp.get("content") or "").strip()
+                if second_text:
+                    reply_content = second_text
+                else:
+                    reply_content = ""
             except Exception as e:
                 logger.warning(f"Second turn synthesis failed: {e}")
-                if executed_products_data:
-                    total_p = sum(p.get("price", 0) for p in executed_products_data)
-                    reply_content = f"Here are the matching ingredients I found for you (Total: ₹{total_p:.0f}):"
-                elif route_summary:
-                    reply_content = f"I've calculated the shortest aisle shopping route ({route_summary.get('total_distance', '60m')}) for your items."
+                reply_content = ""
+
+        # Safety filter: if content contains internal chain-of-thought monologue
+        cot_phrases = ["The user says", "The user is asking", "Let's call", "We should respond", "Likely they want"]
+        if any(reply_content.strip().startswith(p) for p in cot_phrases):
+            reply_content = ""
 
         # Fallback if reply is empty
         if not reply_content.strip():
-            reply_content = "I have processed your request. How else can I assist you with SwiftMart or AIP today?"
+            if executed_products_data:
+                first_p = executed_products_data[0]
+                if first_p.get("shelf_name") and first_p.get("aisle_name"):
+                    reply_content = f"📍 **{first_p['name']}** is located at **{first_p['shelf_name']}** in the **{first_p['aisle_name']}** section (₹{first_p['price']:.0f})."
+                else:
+                    total_p = sum(p.get("price", 0) for p in executed_products_data)
+                    reply_content = f"Here are the matching items I found for you (Total: ₹{total_p:.0f}):"
+            elif route_summary:
+                reply_content = f"I've calculated the shortest aisle shopping route ({route_summary.get('total_distance', '60m')}) for your items."
+            else:
+                reply_content = "I have processed your request. How else can I assist you with SwiftMart or AIP today?"
 
         # Step 11: Record Usage Metrics
         latency = (time.time() - start_time) * 1000
