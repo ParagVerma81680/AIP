@@ -171,13 +171,22 @@ class AIService:
                 })
 
             # Send tool outputs back to LLM for final synthesis
-            second_resp = await provider.generate_response(
-                messages=tool_outputs_messages,
-                system_prompt=full_system_prompt,
-                temperature=0.7,
-                max_tokens=600,
-            )
-            reply_content = second_resp.get("content") or reply_content
+            try:
+                second_resp = await provider.generate_response(
+                    messages=tool_outputs_messages,
+                    system_prompt=full_system_prompt,
+                    temperature=0.7,
+                    max_tokens=600,
+                    tools=available_tools,
+                )
+                reply_content = second_resp.get("content") or reply_content
+            except Exception as e:
+                logger.warning(f"Second turn synthesis failed: {e}")
+                if executed_products_data:
+                    total_p = sum(p.get("price", 0) for p in executed_products_data)
+                    reply_content = f"Here are the matching ingredients I found for you (Total: ₹{total_p:.0f}):"
+                elif route_summary:
+                    reply_content = f"I've calculated the shortest aisle shopping route ({route_summary.get('total_distance', '60m')}) for your items."
 
         # Fallback if reply is empty
         if not reply_content.strip():
